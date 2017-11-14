@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
+	color: #555;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+p{
+	margin: 0;
+	margin-bottom: 20px;
+
+	text-align: center;
+	color: #555;
+	font-size: 20px;
+	font-weight: 400;
+	/*text-transform: uppercase;*/
+}
+
+p a{
+	color: #888;
+}
+
+p a:hover{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.fotorama{
+	width: 70%;
+	margin: 0 auto;
+
+	box-shadow: 2px 0 2px 0 #555, -2px 0 2px 0 #555;
+}
+
+.fotorama .fotorama__caption .fotorama__caption__wrap{
+	background: #555;
+	box-shadow: 2px 0 2px 2px #555, -2px 0 2px 2px #555;
+
+	padding: 10px 20px;
+
+	color: #fff;
+}
+
+.fotorama .fotorama__caption .fotorama__caption__wrap:hover{
+	background: #999;
+	box-shadow: 2px 0 2px 2px #999, -2px 0 2px 2px #999
+}
+
+.slides-portfolio >div{
+	float: left;
+	width: 32%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	box-shadow: 1px 0 9px 1px #555, -1px 0 9px 1px #555;
+	/*border-right: 2px solid grey;*/
+}
+
+.slides-portfolio >div:nth-child(3n+1){
+	clear: left;
+}
