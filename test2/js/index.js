@@ -76,6 +76,9 @@ $(function() {
 		$('.main-content .left-menu').addClass('fix-menu');
 		$('.main-content .left-menu').animate({left: "0"}, 300);
 
+		var h1 = document.body.clientHeight;
+		$('.fix-menu').css('height', h1+'px');
+
 		// block сдвига текста попап при открытии left меню
 		$('.main-content main .menu1').css('padding-left', '212px');
 		//
@@ -86,6 +89,11 @@ $(function() {
 	// 4 - click to close gumburger
 	$('.close-menu-popup').on('click', function() {
 		$('.main-content .left-menu').animate({left: "-200px"}, 300, function() {
+
+			// feedback popup left menu by vertical
+			var h1 = document.body.clientHeight;
+			$('.fix-menu').css('height', '0px');
+
 			$('.main-content .left-menu').removeClass('fix-menu');
 				$('main .all-menu').fadeOut(0);
 				$('.overlay').fadeOut(0);
@@ -97,4 +105,15 @@ $(function() {
 		//
 		$('.main-content main .menu6').css('padding-left', '10px');
 	});
+
+	// 5 - auto height left popup menu
+	var h = document.body.clientHeight;
+	$('.fix-menu').css('height', h+'px');
+
+	$(window).resize(function(){
+	  h = document.body.clientHeight;
+
+	  $('.fix-menu').css('height', h+'px');
+	});
+	
 });
