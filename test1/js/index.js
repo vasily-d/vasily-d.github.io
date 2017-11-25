@@ -102,7 +102,7 @@ $(function() {
 		$('.main-content .left-menu').animate({left: "-200px"}, 300, function() {
 
 			// feedback popup left menu by vertical
-			var h1 = document.body.clientHeight;
+			// var h1 = document.body.clientHeight;
 			$('.fix-menu').css('height', '0px');
 
 			$('.main-content .left-menu').removeClass('fix-menu');
