@@ -361,9 +361,97 @@
 				</div>
 				<h3>Стоимость тура</h3>
 				<p>Рассчитайте предварительную стоимость вашей поездки онлайн</p>
+
 				<div class="calculator">
-					calc
+					<form action="#" method="post">
+						
+						<div class="calculator-way">
+							<p>Куда будем ехать?</p>
+							<button class="active-btn" type="button"><span>Архыз</span></button>
+							<button type="button"><span>Эльбрус</span></button>
+							<button type="button"><span>Красная поляна</span></button>
+						</div>
+
+						<div class="equipment">
+							<div class="count">
+								<p>Количество человек</p>
+								<button class="minus" type="button">-</button>
+								<input type="text" value="1">
+								<button class="plus" type="button">+</button>
+							</div>
+							<div class="food">
+								<p>Питание</p>
+								<input type="checkbox" class="checkbox" id="checkbox1">
+								<label for="checkbox1"></label>
+							</div>
+							<div class="rental-of-equipment">
+								<p>Аренда снаряжения</p>
+								<input type="checkbox" class="checkbox" id="checkbox2">
+								<label for="checkbox2"></label>
+							</div>
+						</div>
+
+						<div class="equipment-hidden">
+							<div class="left">
+								<button class="active-btn" type="button"><span>для сноубордиста</span></button>
+								<button type="button"><span>для лыжника</span></button>
+							</div>
+
+							<div class="right">
+								<div class="top">
+									<p>Лыжи, палки, ботинки</p>
+									<input type="checkbox" class="checkbox" id="checkbox3">
+									<label for="checkbox3"></label>
+								</div>
+								<div class="bottom">
+									<div class="left">
+										<p>Маска</p>
+										<input type="checkbox" class="checkbox" id="checkbox4">
+										<label for="checkbox4"></label>
+									</div>
+
+									<div class="right">
+										<p>Комплекты</p>
+										<button class="minus" type="button">-</button>
+										<input type="text" value="1">
+										<button class="plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="lift">
+							<p>Подъемник</p>
+							<button class="active-btn" type="button"><span>1 день</span></button>
+							<button type="button"><span>2 дня</span></button>
+							<button type="button"><span>2 дня +вечер</span></button>
+						</div>
+
+						<div class="learn">
+							<p>Обучение</p>
+							<input type="checkbox" class="checkbox" id="checkbox">
+							<label for="checkbox"></label>
+						</div>
+
+						<div class="learn-hidden">
+							<div class="left">
+								<button class="active-btn" type="button"><span>Индивидуальное</span></button>
+								<button type="button"><span>Групповое</span></button>
+							</div>
+
+							<div class="right">
+								<p>Количество часов</p>
+								<button class="minus" type="button">-</button>
+								<input type="text" value="1">
+								<button class="plus" type="button">+</button>
+							</div>
+						</div>
+
+					</form>
 				</div>
+
 				<div class="bottom-calc clearfix">
 					<div class="advance-paynemt">
 						<p>Предварительный бюджет поездки</p>
