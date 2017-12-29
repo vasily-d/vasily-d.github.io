@@ -69,11 +69,43 @@ $(function() {
 		var dataNum = $(this).attr('data-num');
 		
 		$('.bottom-slider').slick('slickGoTo', dataNum-1, true);
+	});
 
-		
+	// checkbox
+	// learn
+	$('.learn input[type="checkbox"]').on('click', function(e) {
+		if($('.learn input[type="checkbox"]').prop("checked")) {
+			$('.learn-hidden').css('display','block');
+		}
+		else {
+			$('.learn-hidden').css('display','none');
+		}
+	});
+
+	// 2 events
+	$('.equipment-hidden .left button').on('click', function(e) {
+		$('.equipment-hidden .left button').removeClass('active-btn');
+		$(this).addClass('active-btn');
+
+		if($(this).attr('data-number') == 1) {
+			$('.equipment-hidden .right .top p').text('Сноуборд, ботинки');
+		}
+		else {
+			$('.equipment-hidden .right .top p').text('Лыжи, палки, ботинки');
+		}
 	});
 
 
+	$('.rental-of-equipment #checkbox2').on('click', function(e) {
+		if($('.rental-of-equipment #checkbox2').prop("checked")) {
+			$('.equipment-hidden').css('display','block');
+		}
+		else {
+			$('.equipment-hidden').css('display','none');
+		}
+	});
+
+	
 	
 
 	// popups
@@ -119,6 +151,25 @@ $(function() {
 
 	// js-popup-tour3
 	$('.js-popup-tour3').on('click', function(e) {
+		e.preventDefault();
+
+		// поиск button close
+		$('#js-close-popup').on('click', function(e) {
+			// $('.popup-tour').css('display', 'none');
+			// $('.popup-overlay').css('display', 'none');
+			$('.popup-tour').slideUp();
+			$('.popup-overlay').css('display', 'none');
+		});
+
+		// поиск popup tour и popup-overlay
+		// $('.popup-tour').css('display', 'block');
+		// $('.popup-overlay').css('display', 'block');
+		$('.popup-tour').slideDown();
+		$('.popup-overlay').css('display', 'block');
+	});
+
+	// js-popup-tour4
+	$('.js-popup-tour4').on('click', function(e) {
 		e.preventDefault();
 
 		// поиск button close
