@@ -64,6 +64,16 @@ $(function() {
 		}
 	});
 
+	// click to img
+	$('.second-bottom-slider div').on('click', function(e) {
+		var dataNum = $(this).attr('data-num');
+		
+		$('.bottom-slider').slick('slickGoTo', dataNum-1, true);
+
+		
+	});
+
+
 	
 
 	// popups
