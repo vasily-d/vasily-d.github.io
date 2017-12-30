@@ -37,6 +37,12 @@ $(function() {
 	  	// console.log('0');
 	  	$('#js-second-bottom-slider div').removeClass('active-photo');
 	  	$('#js-second-bottom-slider div').eq(number).addClass('active-photo');
+	  	$('.second-bottom-slider >div').removeClass('name1');
+	  	$('.second-bottom-slider >div').removeClass('name2');
+	  	$('.second-bottom-slider >div').removeClass('name3');
+	  	$('.second-bottom-slider >div').removeClass('name4');
+	  	$('.second-bottom-slider >div').removeClass('name5');
+	  	$('.second-bottom-slider >div').eq(0).addClass('name1');
 
 	  	// method anime
 	  	// $('#js-second-bottom-slider div img').eq(number).animate({width: "65px"}, 1000);
@@ -46,29 +52,82 @@ $(function() {
 	  	//console.log('1');
 	  	$('#js-second-bottom-slider div').removeClass('active-photo');
 	  	$('#js-second-bottom-slider div').eq(number).addClass('active-photo');
+	  	$('.second-bottom-slider >div').removeClass('name1');
+	  	$('.second-bottom-slider >div').removeClass('name2');
+	  	$('.second-bottom-slider >div').removeClass('name3');
+	  	$('.second-bottom-slider >div').removeClass('name4');
+	  	$('.second-bottom-slider >div').removeClass('name5');
+	  	$('.second-bottom-slider >div').eq(1).addClass('name2');
 		}
 		else if (number == 2) {
 	  	// console.log('2');
 	  	$('#js-second-bottom-slider div').removeClass('active-photo');
 	  	$('#js-second-bottom-slider div').eq(number).addClass('active-photo');
+	  	$('.second-bottom-slider >div').removeClass('name1');
+	  	$('.second-bottom-slider >div').removeClass('name2');
+	  	$('.second-bottom-slider >div').removeClass('name3');
+	  	$('.second-bottom-slider >div').removeClass('name4');
+	  	$('.second-bottom-slider >div').removeClass('name5');
+	  	$('.second-bottom-slider >div').eq(2).addClass('name3');
 		}
 		else if (number == 3) {
 	  	// console.log('3');
 	  	$('#js-second-bottom-slider div').removeClass('active-photo');
 	  	$('#js-second-bottom-slider div').eq(number).addClass('active-photo');
+	  	$('.second-bottom-slider >div').removeClass('name1');
+	  	$('.second-bottom-slider >div').removeClass('name2');
+	  	$('.second-bottom-slider >div').removeClass('name3');
+	  	$('.second-bottom-slider >div').removeClass('name4');
+	  	$('.second-bottom-slider >div').removeClass('name5');
+	  	$('.second-bottom-slider >div').eq(3).addClass('name4');
 		}
 		else if (number == 4) {
 	  	// console.log('4');
 	  	$('#js-second-bottom-slider div').removeClass('active-photo');
 	  	$('#js-second-bottom-slider div').eq(number).addClass('active-photo');
+	  	$('.second-bottom-slider >div').removeClass('name1');
+	  	$('.second-bottom-slider >div').removeClass('name2');
+	  	$('.second-bottom-slider >div').removeClass('name3');
+	  	$('.second-bottom-slider >div').removeClass('name4');
+	  	$('.second-bottom-slider >div').removeClass('name5');
+	  	$('.second-bottom-slider >div').eq(4).addClass('name5');
 		}
 	});
 
 	// click to img
+	$('.second-bottom-slider >div').eq(0).addClass('name1');
 	$('.second-bottom-slider div').on('click', function(e) {
 		var dataNum = $(this).attr('data-num');
 		
 		$('.bottom-slider').slick('slickGoTo', dataNum-1, true);
+
+		// old method
+		// $('.active-photo').addClass('active-photo');
+
+		$('.second-bottom-slider >div').removeClass('active-photo');
+		$('.second-bottom-slider >div').removeClass('name1');
+		$('.second-bottom-slider >div').removeClass('name2');
+		$('.second-bottom-slider >div').removeClass('name3');
+		$('.second-bottom-slider >div').removeClass('name4');
+		$('.second-bottom-slider >div').removeClass('name5');
+
+		$($(this)).addClass('active-photo');
+		if(dataNum == 1) {
+			$($(this)).addClass('name1');
+		}
+		if(dataNum == 2) {
+			$($(this)).addClass('name2');
+		}
+		if(dataNum == 3) {
+			$($(this)).addClass('name3');
+		}
+		if(dataNum == 4) {
+			$($(this)).addClass('name4');
+		}
+		if(dataNum == 5) {
+			$($(this)).addClass('name5');
+		}
+
 	});
 
 	// checkbox
