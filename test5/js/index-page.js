@@ -1,14 +1,4 @@
 $(function() {
-	// запуск и подключение icheck
-	// $('input').iCheck({
-	// 	checkboxClass: 'icheckbox_polaris',
-	// 	radioClass: 'iradio_polaris'
-	// });
-
-	// wow js
-	// new WOW().init();
-
-
 	// tabs jquery
 	$(function() {
 		$(".tab_item").not(":first").hide();
@@ -28,9 +18,9 @@ $(function() {
 		$('.slider').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			// autoplay: true,
+			autoplay: true,
 			dots: true,
-			autoplaySpeed: 4000
+			autoplaySpeed: 3000
 		});
 	});
 
