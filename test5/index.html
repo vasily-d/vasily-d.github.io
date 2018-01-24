@@ -56,7 +56,7 @@
 					<p>есть вопросы?<br>оставьте заявку на обратный звонок</p>
 				</div>
 				<div class="right">
-					<a class="questions-button" href="#">отправить заявку</a>
+					<a class="questions-button js-popup" href="#">отправить заявку</a>
 				</div>
 			</div>
 		</section>
@@ -191,7 +191,7 @@
 
 		<section class="all-layouts">
 			<div class="wrap">
-				<a class="layouts-button" href="#">получить каталог всех планировок</a>
+				<a class="layouts-button js-popup" href="#">получить каталог всех планировок</a>
 			</div>
 		</section>
 
@@ -226,7 +226,7 @@
 					<p>записаться на экскурсию<br>по жилому комплексу</p>
 				</div>
 				<div class="right">
-					<a class="excursion-button" href="#">отправить заявку</a>
+					<a class="excursion-button js-popup" href="#">отправить заявку</a>
 				</div>
 			</div>
 		</section>
@@ -314,7 +314,7 @@
 						<p>расчитайте ипотеку</p>
 					</div>
 					<div class="right">
-						<a class="mortgage-button" href="#">отправить заявку</a>
+						<a class="mortgage-button js-popup" href="#">отправить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -327,26 +327,26 @@
 				<div class="top">
 					<div class="left">
 						<img src="img/sberbank.jpg" alt="sberbank" width="300" height="78">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div><div class="center">
 						<img src="img/vtb24.jpg" alt="vtb24" width="300" height="82">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div><div class="right">
 						<img src="img/uralsib.jpg" alt="uralsib" width="286" height="87">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div>
 				</div>
 
 				<div class="bottom">
 					<div class="left">
 						<img src="img/uralbank.jpg" alt="uralsib" width="292" height="51">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div><div class="center">
 						<img src="img/absolutbank.jpg" alt="absolutbank" width="300" height="65">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div><div class="right">
 						<img src="img/gazprombank.jpg" alt="gazprombank" width="300" height="65">
-						<a class="main-button" href="#">отправить заявку</a>
+						<a class="main-button js-popup" href="#">отправить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -355,7 +355,7 @@
 		<section class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2185.944332184308!2d60.547014815511154!3d56.778260819903586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16f52d1485eed%3A0x72883dc3d8620c5!2z0YPQuy4g0JrRgNCw0YHQvdC-0LvQtdGB0YzRjywgMTAsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0KHQstC10YDQtNC70L7QstGB0LrQsNGPINC-0LHQuy4sIDYyMDAxNg!5e0!3m2!1sru!2sru!4v1515668943935" height="500" allowfullscreen></iframe>
 
-			<div class="popup">
+			<div class="popup2">
 				<h2>контакты</h2>
 				<a href="tel:+77777777777" target="_blank">+7 (777) 777-77-77</a>
 				<a class="email" href="mailto:kompaniya@gmail.com">kompaniya@gmail.com</a>
@@ -371,6 +371,21 @@
 			<p>Условия обработки персональных данных</p>
 			<p>&copy; <a href="http://prodazha-kvartir.ru" target="_blank">prodazha-kvartir.ru</a></p>
 		</footer>
+
+		<!-- popup -->
+		<div class="popup">
+			<h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+			<!-- <p>чтобы получить консультацию</p> -->
+			<p></p>
+			<form action="#" method="post">
+				<input type="text" name="name" placeholder="ваше имя" required><br>
+				<input type="text" name="tel" placeholder="ваш телефон" required><br>
+				<button type="submit"><span>отправить заявку</span></button>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
+
 
 
 		<!-- scripts -->
