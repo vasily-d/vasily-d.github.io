@@ -10,8 +10,6 @@ $(function() {
 		});
 
 
-		
-
 		// slick slider2
 		$('.slider2 .slider-slick').slick({
 			slidesToShow: 3,
