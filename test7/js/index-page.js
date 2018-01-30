@@ -1,5 +1,4 @@
 $(function() {
-	$(document).ready(function() {
 		// slick slider
 		$('.slider .slider-slick').slick({
 			slidesToShow: 1,
@@ -77,5 +76,4 @@ $(function() {
 			$('.popup-overlay1').css('display', 'block');
 		});	
 
-	});
 });
