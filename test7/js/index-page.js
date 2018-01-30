@@ -21,15 +21,33 @@ $(function() {
 		});
 
 
-		 $('.owl-carousel').owlCarousel({
-		 	items: 2,
-		 	loop: true,
-		 	autoWidth: true,
-		 	margin: 26,
-		 	autoplay: true,
-		 	nav: true,
-		 	dots: true
-		 });
+		$('.owl-carousel').owlCarousel({
+			items: 2,
+			loop: true,
+			autoWidth: true,
+			margin: 26,
+			// autoplay: true,
+			nav: true,
+			dots: true
+		});
+
+		$('.owl-carousel').on('changed.owl.carousel', function(event) {
+		 	// console.log($('.owl-dot.active'));
+		 	$('.owl-dot.active').click();
+		 	// $('.owl-stage').css('transform','translate3d(-752px, 0px, 0px)');
+		})
+
+		// $('.owl-carousel').owlCarousel({
+		//     translated: callback
+		// });
+
+		// function callback(event) {
+		//     alert(1);
+		//     console.log('11');
+		// }
+
+
+		
 
 
 		// popups
