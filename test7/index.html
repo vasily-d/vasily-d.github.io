@@ -22,7 +22,7 @@
 	</head>
 		
 	<body>
-		<header class="wrap clearfix" id="#top">
+		<header class="wrap clearfix" id="top">
 			<div class="logo">
 				<a href="index.html">
 				  <p>#хочу<span>летать</span></p>
@@ -75,7 +75,8 @@
 				<p>Выполняем пилотаж, даем порулить, <br>дарим сертификаты</p>
 				<div class="button-box">
 					<a class="enroll-for-a-flight js-popup" href="#">Записаться на полет</a>
-					<a class="more js-popup" href="#">Узнать подробнее</a>
+					<a class="more go_to1" href=".elm_footer">Узнать подробнее</a>
+					<!-- <a class="go_to1" href="#elm">Туда</a> или <a class="go_to" href=".elm">Сюда</a> -->
 				</div>
 			</div>
 		</section>
@@ -143,7 +144,7 @@
 					Длительность полета: <span>20-50 минут</span>
 				</p>
 				<a class="js-popup" href="#">ЗАПИСАТЬСЯ НА ПОЛЕТ</a>
-				<p class="certificate">Купить подарочный сертификат</p>
+				<p class="certificate js-popup">Купить подарочный сертификат</p>
 			</div>
 			<div class="item3">
 				<h4>ОБУЧЕНИЕ</h4>
@@ -260,7 +261,7 @@
 		<section class="discount">
 			<div class="wrap">
 				<h3>Получите скидку <span class="discount10">-10%</span></h3>
-				<p>Запишитесь на полет сейчас и получите скидку - 10% <br>на одну из наших <a href="#second-screen" class="sentence">экстремальных услуг</a></p>
+				<p>Запишитесь на полет сейчас и получите скидку - 10% <br>на одну из наших <a class="go_to1" href="#second-screen" class="sentence">экстремальных услуг</a></p>
 
 				<a class="enroll-button js-popup" href="#">Записаться на полет</a>
 				<span class="spec">*Предложение действительно до 01.12.17</span>
@@ -277,10 +278,20 @@
 				<div><img src="img/slider2-photo3.png" alt="photo3" width="350" height="435"></div>	
 			</div>
 
-			<div class="center" onClick="window.location='http://ya.ru'">
+			<div class="center zero" onClick="window.location='http://ya.ru'">
 				<h3>ПРЫЖКИ<br> С ПАРАШЮТОМ</h3>
 				<span>В тандеме с инструктором</span>
 				<p>от 8 000 руб</p>
+			</div>
+			<div class="center one" onClick="window.location='http://ya.ru'">
+				<h3>ПОЛЕТЫ НА<br> ВОЗДУШНОМ<br> ШАРЕ</h3>
+				<span>Необычный романтический<br> подарок для любимых</span>
+				<p>от 5 000 руб</p>
+			</div>
+			<div class="center two" onClick="window.location='http://ya.ru'">
+				<h3>ПОЛЕТЫ<br> НА ЯКЕ-18</h3>
+				<span>Выполняем элементы<br> сложного пилотажа</span>
+				<p>от 5 000 руб</p>
 			</div>
 		</section>
 
@@ -335,7 +346,7 @@
 			</div>
 		</section>
 
-		<footer class="wrap clearfix">
+		<footer class="wrap clearfix elm_footer">
 			<div class="logo">
 				<a href="index.html">
 				  <p>#хочу<span>летать</span></p>
@@ -345,7 +356,7 @@
 				<p>Полеты на планере в Краснодарском крае</p>
 			</div>
 			<div class="btn-up">
-				<a href="#top">НАВЕРХ</a>
+				<a class="go_to1" href="#top">НАВЕРХ</a>
 			</div>
 		</footer>
 

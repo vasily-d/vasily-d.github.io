@@ -8,7 +8,6 @@ $(function() {
 			dots: true
 		});
 
-
 		// slick slider2
 		$('.slider2 .slider-slick').slick({
 			slidesToShow: 3,
@@ -20,7 +19,7 @@ $(function() {
 			dots: true
 		});
 
-
+		// owl
 		$('.owl-carousel').owlCarousel({
 			items: 2,
 			loop: true,
@@ -32,14 +31,30 @@ $(function() {
 		});
 
 		$('.owl-carousel').on('changed.owl.carousel', function(event) {
-		 	// console.log($('.owl-dot.active'));
-
 		 	setTimeout(function() 
 	 	  {
 		 		$('.owl-dot.active').click();
+
+	 	  	// получение центрального слайда
+	 	  	//console.log($('.owl-dot.active').index());
+
+	 	  	// сброс значений
+	 	  	$('.zero').css('display', 'none');
+	 	  	$('.one').css('display', 'none');
+	 	  	$('.two').css('display', 'none');
+
+	 	  	// применение новых данных для центрального дива
+	 	  	if ($('.owl-dot.active').index() == 0) {
+	 	  		$('.zero').css('display', 'block');
+	 	  	}
+	 	  	if ($('.owl-dot.active').index() == 1) {
+	 	  		$('.one').css('display', 'block');
+	 	  	}
+	 	  	if ($('.owl-dot.active').index() == 2) {
+	 	  		$('.two').css('display', 'block');
+	 	  	}
 	 	  }, 150);
 		});		
-
 
 		// popups
 		// ставим на кнопку которая вызывает данный popup
@@ -82,6 +97,17 @@ $(function() {
 			// or
 			$('.popup2').slideDown();
 			$('.popup-overlay1').css('display', 'block');
+		});
+
+		// scroll
+		$('.go_to1').click( function() { // ловим клик по ссылке с классом go_to
+			var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+		  
+		  if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+				$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 900); // анимируем скроолинг к элементу scroll_el
+		  }
+
+			return false; // выключаем стандартное действие
 		});
 
 });
