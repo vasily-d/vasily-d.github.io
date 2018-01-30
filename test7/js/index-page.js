@@ -24,7 +24,7 @@ $(function() {
 			items: 2,
 			loop: true,
 			autoWidth: true,
-			margin: 26,
+			margin: 25,
 			// autoplay: true,
 			nav: true,
 			dots: true
