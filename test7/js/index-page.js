@@ -33,21 +33,12 @@ $(function() {
 
 		$('.owl-carousel').on('changed.owl.carousel', function(event) {
 		 	// console.log($('.owl-dot.active'));
-		 	$('.owl-dot.active').click();
-		 	// $('.owl-stage').css('transform','translate3d(-752px, 0px, 0px)');
-		})
 
-		// $('.owl-carousel').owlCarousel({
-		//     translated: callback
-		// });
-
-		// function callback(event) {
-		//     alert(1);
-		//     console.log('11');
-		// }
-
-
-		
+		 	setTimeout(function() 
+	 	  {
+		 		$('.owl-dot.active').click();
+	 	  }, 150);
+		});		
 
 
 		// popups
@@ -72,7 +63,6 @@ $(function() {
 			$('.popup-overlay1').css('display', 'block');
 		});
 
-
 		// ставим на кнопку которая вызывает данный popup
 		$('.js-popup2').on('click', function(e) {
 			e.preventDefault();
@@ -92,6 +82,6 @@ $(function() {
 			// or
 			$('.popup2').slideDown();
 			$('.popup-overlay1').css('display', 'block');
-		});	
+		});
 
 });
