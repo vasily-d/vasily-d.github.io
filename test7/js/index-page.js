@@ -9,15 +9,15 @@ $(function() {
 		});
 
 		// slick slider2
-		$('.slider2 .slider-slick').slick({
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			infinite: true,
-			autoplay: true,
-  		autoplaySpeed: 2000,
-			arrows: true,
-			dots: true
-		});
+		// $('.slider2 .slider-slick').slick({
+		// 	slidesToShow: 3,
+		// 	slidesToScroll: 1,
+		// 	infinite: true,
+		// 	autoplay: true,
+  // 		autoplaySpeed: 2000,
+		// 	arrows: true,
+		// 	dots: true
+		// });
 
 		// owl
 		$('.owl-carousel').owlCarousel({
@@ -25,7 +25,7 @@ $(function() {
 			loop: true,
 			autoWidth: true,
 			margin: 25,
-			// autoplay: true,
+			autoplay: true,
 			nav: true,
 			dots: true
 		});
@@ -127,9 +127,9 @@ $(function() {
 					
 					$('.video-youtube iframe').attr("src", sr);
 					
-
 		 	  }, 50);
 
 		});
+
 
 });
