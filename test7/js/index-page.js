@@ -53,7 +53,7 @@ $(function() {
 	 	  	if ($('.owl-dot.active').index() == 2) {
 	 	  		$('.two').css('display', 'block');
 	 	  	}
-	 	  }, 150);
+	 	  }, 140);
 		});		
 
 		// popups
@@ -108,6 +108,27 @@ $(function() {
 		  }
 
 			return false; // выключаем стандартное действие
+		});
+
+		// play
+		$('.play-js').on('click', function(e) {
+			$('.youtube-overlay').hide();
+
+			 	setTimeout(function() 
+		 	  {
+			 		
+					// $('.video-youtube iframe').click();
+					// console.log($('.video-youtube iframe'));
+
+					var sr = $('.video-youtube iframe').attr("src");
+					sr = sr+'&autoplay=1';
+
+					//console.log(sr);
+					
+					$('.video-youtube iframe').attr("src", sr);
+					
+		 	  }, 840);
+
 		});
 
 });
