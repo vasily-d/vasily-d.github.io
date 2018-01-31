@@ -127,7 +127,7 @@ $(function() {
 					
 					$('.video-youtube iframe').attr("src", sr);
 					
-		 	  }, 840);
+		 	  }, 100);
 
 		});
 
