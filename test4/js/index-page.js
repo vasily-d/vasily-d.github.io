@@ -246,6 +246,25 @@ $(function() {
 		$('.popup-overlay').css('display', 'block');
 	});
 
+	// js-popup-tour5
+	$('.js-popup-tour5').on('click', function(e) {
+		e.preventDefault();
+
+		// поиск button close
+		$('#js-close-popup').on('click', function(e) {
+			// $('.popup-tour').css('display', 'none');
+			// $('.popup-overlay').css('display', 'none');
+			$('.popup-tour').slideUp();
+			$('.popup-overlay').css('display', 'none');
+		});
+
+		// поиск popup tour и popup-overlay
+		// $('.popup-tour').css('display', 'block');
+		// $('.popup-overlay').css('display', 'block');
+		$('.popup-tour').slideDown();
+		$('.popup-overlay').css('display', 'block');
+	});
+
 
 	// js-popup-call
 	// $('#js-popup-call').on('click', function(e) {
