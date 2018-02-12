@@ -1,12 +1,14 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
+
+	font-family: 'Arial', sans-serif;
 }
 
-h1{
+h2 {
 	margin: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
 	text-align: center;
 	color: #555;
@@ -15,13 +17,9 @@ h1{
 	text-transform: uppercase;
 }
 
-h1.last{
-	margin-top: 50px;
-}
-
-p{
+p, .list-technology ul li {
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 
 	text-align: center;
 	color: #555;
@@ -30,33 +28,43 @@ p{
 	/*text-transform: uppercase;*/
 }
 
-p a{
+.list-technology ul {
+	margin: 0;
+	margin-bottom: 25px;
+	list-style-type: none;
+}
+
+.list-technology ul li {
+	margin-bottom: 0;
+}
+
+p a {
 	color: #888;
 }
 
-p a:hover{
+p a:hover {
 	text-decoration: none;
 }
 
-img{
+img {
 	max-width: 100%;
 	height: auto;
 }
 
-.clearfix:after{
+.clearfix:after {
 	content: '';
 	display: table;
 	clear: both;
 }
 
-.fotorama{
+.fotorama {
 	width: 70%;
 	margin: 0 auto;
 
 	box-shadow: 2px 0 2px 0 #555, -2px 0 2px 0 #555;
 }
 
-.fotorama .fotorama__caption .fotorama__caption__wrap{
+.fotorama .fotorama__caption .fotorama__caption__wrap {
 	background: #555;
 	box-shadow: 2px 0 2px 2px #555, -2px 0 2px 2px #555;
 
@@ -65,12 +73,12 @@ img{
 	color: #fff;
 }
 
-.fotorama .fotorama__caption .fotorama__caption__wrap:hover{
+.fotorama .fotorama__caption .fotorama__caption__wrap:hover {
 	background: #999;
 	box-shadow: 2px 0 2px 2px #999, -2px 0 2px 2px #999
 }
 
-.slides-portfolio >div{
+.slides-portfolio >div {
 	-webkit-transition: all .5s ease-out;
 	-o-transition: all .5s ease-out;
 	transition: all .5s ease-out;
@@ -86,28 +94,28 @@ img{
 	/*border-right: 2px solid grey;*/
 }
 
-.slides-portfolio >div:nth-child(3n+1){
+.slides-portfolio >div:nth-child(3n+1) {
 	clear: left;
 }
 
-.slides-portfolio >div:hover{
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	transform: scale(1.05);
+.slides-portfolio >div:hover {
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-o-transform: scale(1.02);
+	transform: scale(1.02);
 }
 
-footer{
+footer {
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-footer p{
+footer p {
 	margin: 0;
 	display: inline;
 }
 
-footer a{
+footer a {
 	color: #555;
 	font-size: 20px;
 	font-weight: 400;
@@ -115,6 +123,6 @@ footer a{
 	display: inline;
 }
 
-footer a:hover{
+footer a:hover {
 	text-decoration: none;
 }
