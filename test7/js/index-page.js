@@ -2,7 +2,7 @@ $(function() {
 		// slick slider
 		$('.slider .slider-slick').slick({
 			slidesToShow: 1,
-			autoplay: true,
+			// autoplay: true,
   		autoplaySpeed: 2000,
 			arrows: true,
 			dots: true
@@ -25,7 +25,7 @@ $(function() {
 			loop: true,
 			autoWidth: true,
 			margin: 25,
-			autoplay: true,
+			autoplay: false,
 			nav: true,
 			dots: true
 		});
