@@ -25,7 +25,7 @@ $(function() {
 			loop: true,
 			autoWidth: true,
 			margin: 25,
-			autoplay: false,
+			autoplay: true,
 			nav: true,
 			dots: true
 		});
