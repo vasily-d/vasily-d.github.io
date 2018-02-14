@@ -7,7 +7,39 @@ $(function() {
 			autoplay: true,
 			autoplaySpeed: 2000,
 			arrows: true,
-			dots: false
+			dots: true,
+			responsive: [
+			    {
+			      breakpoint: 1060,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 4
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 3,
+			        arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 2,
+			        arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 420,
+			      settings: {
+			        slidesToShow: 1,
+			        arrows: false
+			      }
+			    }
+			  ]
 		});
 
 		// slick slider2
@@ -17,7 +49,33 @@ $(function() {
 			autoplay: true,
 			autoplaySpeed: 2000,
 			arrows: true,
-			dots: false
+			dots: true,
+			responsive: [
+			    {
+			      breakpoint: 1060,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 4
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 3,
+			        arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 2,
+			        arrows: false
+			      }
+			    }
+			  ]
+
 		});
 
 		// jQuery smooth scrolling
