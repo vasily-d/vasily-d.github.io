@@ -43,5 +43,29 @@ $(function() {
 		$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
 
+		// popup1
+		$('.js-popup1').on('click', function(e) {
+		  e.preventDefault();
+
+		  // поиск popup и popup-overlay для их открытия
+		  // $('.popup').css('display', 'block');
+		  // $('.popup-overlay').css('display', 'block');
+		  // or
+		  $('.popup1').slideDown();
+		  $('.popup-overlay').css('display', 'block');
+		  
+		  // поиск button close popup
+		  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+		    // $('.popup').css('display', 'none');
+		    // $('.popup-overlay').css('display', 'none');
+		    // or
+		    $('.popup1').slideUp();
+		    $('.popup-overlay').css('display', 'none');
+		  });
+		});
+
+
+
+
 	});
 });

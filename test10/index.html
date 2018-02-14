@@ -40,7 +40,7 @@
 			</header>
 		</div>
 
-		<section class="calculator parallax-window" id="elm" data-parallax="scroll" data-image-src="img/bg/01.jpg">
+		<section class="calculator parallax-window" id="elm" data-parallax="scroll" data-image-src="img/bg/01.jpg" style="background-size: cover;">
 			<div class="wrap">
 				<h2>Семь кликов до готовой сметы на автоматический полив!</h2>
 				<div class="calc-items">
@@ -354,7 +354,7 @@
 			</div>
 		</section>
 		
-		<section class="seasonal-maintenance-of-automatic-watering-systems parallax-window" data-parallax="scroll" data-image-src="img/bg/06.jpg">
+		<section class="seasonal-maintenance-of-automatic-watering-systems parallax-window" data-parallax="scroll" data-image-src="img/bg/06.jpg" style="background-size: 100%;">
 			<div class="wrap">
 				<h2>Сезонное обслуживание систем автополива</h2>
 				
@@ -530,13 +530,55 @@
 				<div class="call">
 					<a href="#">Вызов специалиста на участок</a>
 				</div><div class="send">
-					<a href="#">Отправить схему на проектирование</a>
+					<a class="js-popup1" href="#">Отправить схему на проектирование</a>
 				</div><div class="online">
 					<a class="go_to1" href="#elm">Online расчет стоимости автополива</a>
 				</div>
 			</footer>
 		</div>
 	
+
+
+		<!-- popup - Отправить схему на проектирование -->
+		<div class="popup1">
+			<h3>Отправить схему  участка для проектирования</h3>
+			<p>
+				Отправить план Вашего участка или другие необходимые документы.<br>
+				Оставить заявку на проектирование системы автополива.<br>
+				Заказать расчет стоимости готового проекта.<br>
+				Сделать заказ на поставку оборудования.
+			</p>
+			<p>Вы можете также отправить на электронную почту:
+				<a class="email" href="mailto:autopoliv-pro@mail.ru">autopoliv-pro@mail.ru</a>
+			</p>
+
+			<form class="main-form" enctype="multipart/form-data" action="#" method="POST">
+				<!-- <input type="hidden" name="user_data" value="Аноним"><br> -->
+
+				<label for="name1"Имя:</label><br>
+				<input type="text" id="name1" name="user_name" placeholder="ваше имя" autofocus required><br>
+				
+				<label for="tel1">Телефон:</label><br>
+				<input type="text" id="tel1" name="user_phone" placeholder="ваш телефон" required><br>
+				
+				<label for="email1">E-mail:</label><br>
+				<input type="text" id="email1" name="user_email" placeholder="ваш E-mail" required><br>
+				
+				<label for="file_input">Схема участка (допустимые форматы: JPG, PDF, DWG, PNG):</label><br>
+				<input type="file" id="file-input" name="file_input" required><br>
+				
+				<label for="text-ext">Дополнительная информация</label>
+				<textarea name="big_text" id="text-ext" cols="30" rows="10"></textarea>				
+
+				<button type="submit"><span>отправить заявку</span></button>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+			<p>* Обязательные поля</p>
+		</div>
+		<div class="popup-overlay"></div>
+
+
+
 		<!-- scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="libs/slick/slick.min.js"></script>
