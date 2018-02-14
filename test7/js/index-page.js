@@ -72,7 +72,7 @@ $(function() {
 				items: 2,
 				loop: true,
 				autoWidth: true,
-				margin: 24,
+				margin: 22,
 				autoplay: false,
 				nav: true,
 				dots: true
