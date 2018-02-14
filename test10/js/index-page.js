@@ -39,6 +39,9 @@ $(function() {
 		});
 		
 
+		// parallax js
+		$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+
 
 	});
 });
