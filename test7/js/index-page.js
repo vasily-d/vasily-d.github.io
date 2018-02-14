@@ -19,42 +19,99 @@ $(function() {
 		// 	dots: true
 		// });
 
-		// owl
-		$('.owl-carousel').owlCarousel({
-			items: 2,
-			loop: true,
-			autoWidth: true,
-			margin: 25,
-			autoplay: true,
-			nav: true,
-			dots: true
-		});
+		// // owl
+		// $('.owl-carousel').owlCarousel({
+		// 	items: 2,
+		// 	loop: true,
+		// 	autoWidth: true,
+		// 	margin: 25,
+		// 	autoplay: true,
+		// 	nav: true,
+		// 	dots: true
+		// });
 
-		$('.owl-carousel').on('changed.owl.carousel', function(event) {
-		 	setTimeout(function() 
-	 	  {
-		 		$('.owl-dot.active').click();
+		// $('.owl-carousel').on('changed.owl.carousel', function(event) {
+		//  	setTimeout(function() 
+	 // 	  {
+		//  		$('.owl-dot.active').click();
 
-	 	  	// получение центрального слайда
-	 	  	//console.log($('.owl-dot.active').index());
+	 // 	  	// получение центрального слайда
+	 // 	  	//console.log($('.owl-dot.active').index());
 
-	 	  	// сброс значений
-	 	  	$('.zero').css('display', 'none');
-	 	  	$('.one').css('display', 'none');
-	 	  	$('.two').css('display', 'none');
+	 // 	  	// сброс значений
+	 // 	  	$('.zero').css('display', 'none');
+	 // 	  	$('.one').css('display', 'none');
+	 // 	  	$('.two').css('display', 'none');
 
-	 	  	// применение новых данных для центрального дива
-	 	  	if ($('.owl-dot.active').index() == 0) {
-	 	  		$('.zero').css('display', 'block');
-	 	  	}
-	 	  	if ($('.owl-dot.active').index() == 1) {
-	 	  		$('.one').css('display', 'block');
-	 	  	}
-	 	  	if ($('.owl-dot.active').index() == 2) {
-	 	  		$('.two').css('display', 'block');
-	 	  	}
-	 	  }, 140);
-		});		
+	 // 	  	// применение новых данных для центрального дива
+	 // 	  	if ($('.owl-dot.active').index() == 0) {
+	 // 	  		$('.zero').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 1) {
+	 // 	  		$('.one').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 2) {
+	 // 	  		$('.two').css('display', 'block');
+	 // 	  	}
+	 // 	  }, 140);
+		// });
+
+
+
+
+
+
+
+
+
+
+
+
+			// owl
+			$('.owl-carousel').owlCarousel({
+				items: 2,
+				loop: true,
+				autoWidth: true,
+				margin: 24,
+				autoplay: false,
+				nav: true,
+				dots: true
+			});
+
+			$('.owl-carousel').on('changed.owl.carousel', function(event) {
+			 	setTimeout(function() 
+		 	  {
+			 		$('.owl-dot.active').click();
+
+		 	  	// получение центрального слайда
+		 	  	//console.log($('.owl-dot.active').index());
+
+		 	  	// сброс значений
+		 	  	$('.zero').css('display', 'none');
+		 	  	$('.one').css('display', 'none');
+		 	  	$('.two').css('display', 'none');
+
+		 	  	// применение новых данных для центрального дива
+		 	  	if ($('.owl-dot.active').index() == 0) {
+		 	  		$('.zero').css('display', 'block');
+		 	  	}
+		 	  	if ($('.owl-dot.active').index() == 1) {
+		 	  		$('.one').css('display', 'block');
+		 	  	}
+		 	  	if ($('.owl-dot.active').index() == 2) {
+		 	  		$('.two').css('display', 'block');
+		 	  	}
+		 	  }, 140);
+			});
+
+
+
+
+
+
+
+
+
 
 		// popups
 		// ставим на кнопку которая вызывает данный popup
