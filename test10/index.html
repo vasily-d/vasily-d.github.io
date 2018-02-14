@@ -528,7 +528,7 @@
 		<div class="wrap-fixed">
 			<footer class="wrap-fixed">
 				<div class="call">
-					<a href="#">Вызов специалиста на участок</a>
+					<a class="js-popup2" href="#">Вызов специалиста на участок</a>
 				</div><div class="send">
 					<a class="js-popup1" href="#">Отправить схему на проектирование</a>
 				</div><div class="online">
@@ -539,7 +539,7 @@
 	
 
 
-		<!-- popup - Отправить схему на проектирование -->
+		<!-- popup1 - Отправить схему на проектирование -->
 		<div class="popup1">
 			<h3>Отправить схему  участка для проектирования</h3>
 			<p>
@@ -555,20 +555,20 @@
 			<form class="main-form" enctype="multipart/form-data" action="#" method="POST">
 				<!-- <input type="hidden" name="user_data" value="Аноним"><br> -->
 
-				<label for="name1"Имя:</label><br>
+				<label for="name1">Имя:</label>
 				<input type="text" id="name1" name="user_name" placeholder="ваше имя" autofocus required><br>
 				
-				<label for="tel1">Телефон:</label><br>
+				<label for="tel1">Телефон:</label>
 				<input type="text" id="tel1" name="user_phone" placeholder="ваш телефон" required><br>
 				
-				<label for="email1">E-mail:</label><br>
+				<label for="email1">E-mail:</label>
 				<input type="text" id="email1" name="user_email" placeholder="ваш E-mail" required><br>
 				
-				<label for="file_input">Схема участка (допустимые форматы: JPG, PDF, DWG, PNG):</label><br>
+				<label for="file_input">Схема участка (допустимые форматы: JPG, PDF, DWG, PNG):</label>
 				<input type="file" id="file-input" name="file_input" required><br>
 				
 				<label for="text-ext">Дополнительная информация</label>
-				<textarea name="big_text" id="text-ext" cols="30" rows="10"></textarea>				
+				<textarea name="big_text" id="text-ext" cols="60" rows="4"></textarea><br>				
 
 				<button type="submit"><span>Отправить</span></button>
 			</form>
@@ -576,6 +576,52 @@
 			<p>* Обязательные поля</p>
 		</div>
 		<div class="popup-overlay"></div>
+
+		<!-- popup2 - Отправить схему на проектирование -->
+		<div class="popup2">
+			<h3>Заказать выезд специалиста</h3>
+			
+			<form class="main-form" enctype="multipart/form-data" action="#" method="POST">
+				<!-- <input type="hidden" name="user_data" value="Аноним"><br> -->
+
+				<label for="name1">Имя:</label>
+				<input type="text" id="name1" name="user_name" placeholder="ваше имя" autofocus required><br>
+				
+				<label for="tel1">Телефон:</label>
+				<input type="text" id="tel1" name="user_phone" placeholder="ваш телефон" required><br>
+				
+				<label for="email1">E-mail:</label>
+				<input type="text" id="email1" name="user_email" placeholder="ваш E-mail" required><br>
+				
+				<label>Выберите направление:</label>
+				<select name="choise_way">
+			    <option value="Алтуфьевское шоссе">Алтуфьевское шоссе</option>
+			    <option value="Алтуфьевское шоссе2">Алтуфьевское шоссе2</option>
+			    <option value="Алтуфьевское шоссе3">Алтуфьевское шоссе3</option>
+		   	</select>
+				
+				<label>Удаленность от МКАД:</label>
+				<select name="choise_way_radius">
+			    <option value="00 км">00 км</option>
+			    <option value="100 км">100 км</option>
+			    <option value="200 км">200 км</option>
+		   	</select>
+
+
+				<label for="file_input">Схема участка (допустимые форматы: JPG, PDF, DWG, PNG):</label>
+				<input type="file" id="file-input" name="file_input" required><br>
+				
+				<label for="text-ext">Дополнительная информация</label>
+				<textarea name="big_text" id="text-ext" cols="60" rows="4"></textarea><br>				
+
+				<button type="submit"><span>Отправить</span></button>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+			<p>* Обязательные поля</p>
+		</div>
+		<div class="popup-overlay"></div>
+
+
 
 
 
