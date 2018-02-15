@@ -12,20 +12,33 @@ $(function() {
 		$('.slider2 .slider-slick').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			// rows: 1,
-			// swipeToSlide: true,
 			centerMode: true,
 			variableWidth: true,
-			// centerPadding: '40px',
 			infinite: true,
 			autoplay: false,
   		autoplaySpeed: 2000,
 			arrows: true,
-			dots: true
+			dots: true,
+			responsive: [
+			    {
+			      breakpoint: 540,
+			      settings: {
+			        arrows: false
+			      }
+			    }
+			  ]
 		});
 
+
+
+
+
+		// работа с dots 345
 		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide){
-		  console.log(currentSlide);
+			if (currentSlide == 3) {
+				// console.log( $('.slider2 .slick-dots li button').eq(0) );
+				// $('.slider2 .slick-dots li button').eq(0).css('background','#ff0');
+			}
 		});
 
 
