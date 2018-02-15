@@ -8,53 +8,103 @@ $(function() {
 			dots: true
 		});
 
-		// slick slider2
-		// $('.slider2 .slider-slick').slick({
-		// 	slidesToShow: 3,
-		// 	slidesToScroll: 1,
-		// 	infinite: true,
+
+
+
+
+
+		// owl
+		// $('.owl-carousel').owlCarousel({
+		// 	items: 2,
+		// 	loop: true,
+		// 	autoWidth: true,
+		// 	margin: 25,
 		// 	autoplay: true,
-  // 		autoplaySpeed: 2000,
-		// 	arrows: true,
+		// 	nav: true,
 		// 	dots: true
 		// });
 
-		// owl
-		$('.owl-carousel').owlCarousel({
-			items: 2,
-			loop: true,
-			autoWidth: true,
-			margin: 25,
+		// $('.owl-carousel').on('changed.owl.carousel', function(event) {
+		//  	setTimeout(function() 
+	 // 	  {
+		//  		$('.owl-dot.active').click();
+
+	 // 	  	// получение центрального слайда
+	 // 	  	//console.log($('.owl-dot.active').index());
+
+	 // 	  	// сброс значений
+	 // 	  	$('.zero').css('display', 'none');
+	 // 	  	$('.one').css('display', 'none');
+	 // 	  	$('.two').css('display', 'none');
+
+	 // 	  	// применение новых данных для центрального дива
+	 // 	  	if ($('.owl-dot.active').index() == 0) {
+	 // 	  		$('.zero').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 1) {
+	 // 	  		$('.one').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 2) {
+	 // 	  		$('.two').css('display', 'block');
+	 // 	  	}
+	 // 	  }, 140);
+		// });
+
+		// slick
+		$('.slider2 .slider-slick').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			infinite: true,
 			autoplay: true,
-			nav: true,
-			dots: true
+  		autoplaySpeed: 2000,
+			arrows: true,
+			dots: true,
+			responsive: [
+		    {
+		      breakpoint: 540,
+		      settings: {
+		        arrows: false
+		      }
+		    }
+		  ]
 		});
 
-		$('.owl-carousel').on('changed.owl.carousel', function(event) {
-		 	setTimeout(function() 
-	 	  {
-		 		$('.owl-dot.active').click();
+		// изменение центрального блока в slider2 + работа с dots 345
+		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 
-	 	  	// получение центрального слайда
-	 	  	//console.log($('.owl-dot.active').index());
+			// сброс значений
+			$('.zero').css('display', 'none');
+			$('.one').css('display', 'none');
+			$('.two').css('display', 'none');
 
-	 	  	// сброс значений
-	 	  	$('.zero').css('display', 'none');
-	 	  	$('.one').css('display', 'none');
-	 	  	$('.two').css('display', 'none');
+			console.log($('.slider2 .slider-slick .slick-current img').attr('alt'));
 
-	 	  	// применение новых данных для центрального дива
-	 	  	if ($('.owl-dot.active').index() == 0) {
-	 	  		$('.zero').css('display', 'block');
-	 	  	}
-	 	  	if ($('.owl-dot.active').index() == 1) {
-	 	  		$('.one').css('display', 'block');
-	 	  	}
-	 	  	if ($('.owl-dot.active').index() == 2) {
-	 	  		$('.two').css('display', 'block');
-	 	  	}
-	 	  }, 140);
-		});		
+			// применение новых данных для центрального дива
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo1') {
+				$('.two').css('display', 'block');
+			}
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo2') {
+				$('.zero').css('display', 'block');
+			}
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo3') {
+				$('.one').css('display', 'block');
+			}
+
+
+			if (currentSlide == 3) {
+				// console.log( $('.slider2 .slick-dots li button').eq(0) );
+				// $('.slider2 .slick-dots li button').eq(0).css('background','#ff0');
+			}
+		});
+
+
+
+
+
+
+
 
 		// popups
 		// ставим на кнопку которая вызывает данный popup

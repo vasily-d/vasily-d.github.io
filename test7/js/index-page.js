@@ -2,11 +2,14 @@ $(function() {
 		// slick slider
 		$('.slider .slider-slick').slick({
 			slidesToShow: 1,
-			// autoplay: true,
+			autoplay: true,
   		autoplaySpeed: 2000,
 			arrows: true,
 			dots: true
 		});
+
+
+
 
 		// slick slider2
 		$('.slider2 .slider-slick').slick({
@@ -15,7 +18,7 @@ $(function() {
 			centerMode: true,
 			variableWidth: true,
 			infinite: true,
-			autoplay: false,
+			autoplay: true,
   		autoplaySpeed: 2000,
 			arrows: true,
 			dots: true,
@@ -28,11 +31,6 @@ $(function() {
 		    }
 		  ]
 		});
-
-
-		
-		
-
 
 		// изменение центрального блока в slider2 + работа с dots 345
 		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide) {
@@ -54,15 +52,6 @@ $(function() {
 			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo3') {
 				$('.one').css('display', 'block');
 			}
-
-
-
-
-
-
-
-
-
 
 
 			if (currentSlide == 3) {
@@ -115,51 +104,6 @@ $(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-			// owl
-			// $('.owl-carousel').owlCarousel({
-			// 	items: 2,
-			// 	loop: true,
-			// 	autoWidth: true,
-			// 	margin: 24,
-			// 	autoplay: false,
-			// 	nav: true,
-			// 	dots: true
-			// });
-
-			// $('.owl-carousel').on('changed.owl.carousel', function(event) {
-			//  	setTimeout(function() 
-		 // 	  {
-			//  		$('.owl-dot.active').click();
-
-		 // 	  	// получение центрального слайда
-		 // 	  	//console.log($('.owl-dot.active').index());
-
-		 // 	  	// сброс значений
-		 // 	  	$('.zero').css('display', 'none');
-		 // 	  	$('.one').css('display', 'none');
-		 // 	  	$('.two').css('display', 'none');
-
-		 // 	  	// применение новых данных для центрального дива
-		 // 	  	if ($('.owl-dot.active').index() == 0) {
-		 // 	  		$('.zero').css('display', 'block');
-		 // 	  	}
-		 // 	  	if ($('.owl-dot.active').index() == 1) {
-		 // 	  		$('.one').css('display', 'block');
-		 // 	  	}
-		 // 	  	if ($('.owl-dot.active').index() == 2) {
-		 // 	  		$('.two').css('display', 'block');
-		 // 	  	}
-		 // 	  }, 140);
-			// });
 
 
 
