@@ -12,12 +12,50 @@ $(function() {
 		$('.slider2 .slider-slick').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
+			// rows: 1,
+			// swipeToSlide: true,
+			centerMode: true,
+			variableWidth: true,
+			// centerPadding: '40px',
 			infinite: true,
 			autoplay: false,
   		autoplaySpeed: 2000,
 			arrows: true,
 			dots: true
 		});
+
+		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		  console.log(currentSlide);
+		});
+
+
+		// 		 	setTimeout(function() 
+	 // 	  {
+		//  		// $('.owl-dot.active').click();
+
+	 // 	  	// получение центрального слайда
+	 // 	  	//console.log($('.owl-dot.active').index());
+
+	 // 	  	// сброс значений
+	 // 	  	$('.zero').css('display', 'none');
+	 // 	  	$('.one').css('display', 'none');
+	 // 	  	$('.two').css('display', 'none');
+
+	 // 	  	// применение новых данных для центрального дива
+	 // 	  	if ($('.owl-dot.active').index() == 0) {
+	 // 	  		$('.zero').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 1) {
+	 // 	  		$('.one').css('display', 'block');
+	 // 	  	}
+	 // 	  	if ($('.owl-dot.active').index() == 2) {
+	 // 	  		$('.two').css('display', 'block');
+	 // 	  	}
+	 // 	  }, 140);
+		// });
+
+
+
 
 		// // owl
 		// $('.owl-carousel').owlCarousel({
