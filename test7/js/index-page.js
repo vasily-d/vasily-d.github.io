@@ -20,21 +20,51 @@ $(function() {
 			arrows: true,
 			dots: true,
 			responsive: [
-			    {
-			      breakpoint: 540,
-			      settings: {
-			        arrows: false
-			      }
-			    }
-			  ]
+		    {
+		      breakpoint: 540,
+		      settings: {
+		        arrows: false
+		      }
+		    }
+		  ]
 		});
 
 
+		
+		
+
+
+		// изменение центрального блока в slider2 + работа с dots 345
+		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+
+			// сброс значений
+			$('.zero').css('display', 'none');
+			$('.one').css('display', 'none');
+			$('.two').css('display', 'none');
+
+			console.log($('.slider2 .slider-slick .slick-current img').attr('alt'));
+
+			// применение новых данных для центрального дива
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo1') {
+				$('.two').css('display', 'block');
+			}
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo2') {
+				$('.zero').css('display', 'block');
+			}
+			if ($('.slider2 .slider-slick .slick-current img').attr('alt') == 'photo3') {
+				$('.one').css('display', 'block');
+			}
 
 
 
-		// работа с dots 345
-		$('.slider2 .slider-slick').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+
+
+
+
+
+
+
 			if (currentSlide == 3) {
 				// console.log( $('.slider2 .slick-dots li button').eq(0) );
 				// $('.slider2 .slick-dots li button').eq(0).css('background','#ff0');
@@ -42,30 +72,6 @@ $(function() {
 		});
 
 
-		// 		 	setTimeout(function() 
-	 // 	  {
-		//  		// $('.owl-dot.active').click();
-
-	 // 	  	// получение центрального слайда
-	 // 	  	//console.log($('.owl-dot.active').index());
-
-	 // 	  	// сброс значений
-	 // 	  	$('.zero').css('display', 'none');
-	 // 	  	$('.one').css('display', 'none');
-	 // 	  	$('.two').css('display', 'none');
-
-	 // 	  	// применение новых данных для центрального дива
-	 // 	  	if ($('.owl-dot.active').index() == 0) {
-	 // 	  		$('.zero').css('display', 'block');
-	 // 	  	}
-	 // 	  	if ($('.owl-dot.active').index() == 1) {
-	 // 	  		$('.one').css('display', 'block');
-	 // 	  	}
-	 // 	  	if ($('.owl-dot.active').index() == 2) {
-	 // 	  		$('.two').css('display', 'block');
-	 // 	  	}
-	 // 	  }, 140);
-		// });
 
 
 
@@ -224,7 +230,6 @@ $(function() {
 
 			 	setTimeout(function() 
 		 	  {
-			 		
 					// $('.video-youtube iframe').click();
 					// console.log($('.video-youtube iframe'));
 
@@ -238,6 +243,7 @@ $(function() {
 		 	  }, 50);
 
 		});
+
 
 
 });
