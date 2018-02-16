@@ -18,7 +18,7 @@ $(function() {
 			centerMode: true,
 			variableWidth: true,
 			infinite: true,
-			autoplay: true,
+			autoplay: false,
   		autoplaySpeed: 2000,
 			arrows: true,
 			dots: true,
