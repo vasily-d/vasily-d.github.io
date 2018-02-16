@@ -110,26 +110,26 @@ $(function() {
 			$('.popup-overlay1').css('display', 'block');
 		});
 
-		// ставим на кнопку которая вызывает данный popup
-		$('.js-popup3').on('click', function(e) {
-			e.preventDefault();
+		// ставим на кнопку которая вызывает данный popup - если нужно прикрутить popup3 к кнопке
+		// $('.js-popup3').on('click', function(e) {
+		// 	e.preventDefault();
 
-			// поиск button close popup
-			$('#js-close-popup3, .popup-overlay1').on('click', function(e) {
-				// $('.popup3').css('display', 'none');
-				// $('.popup-overlay1').css('display', 'none');
-				// or
-				$('.popup3').slideUp();
-				$('.popup-overlay1').css('display', 'none');
-			});
+		// 	// поиск button close popup
+		// 	$('#js-close-popup3, .popup-overlay1').on('click', function(e) {
+		// 		// $('.popup3').css('display', 'none');
+		// 		// $('.popup-overlay1').css('display', 'none');
+		// 		// or
+		// 		$('.popup3').slideUp();
+		// 		$('.popup-overlay1').css('display', 'none');
+		// 	});
 
-			// поиск popup и popup-overlay для их открытия
-			// $('.popup3').css('display', 'block');
-			// $('.popup-overlay1').css('display', 'block');
-			// or
-			$('.popup3').slideDown();
-			$('.popup-overlay1').css('display', 'block');
-		});
+		// 	// поиск popup и popup-overlay для их открытия
+		// 	// $('.popup3').css('display', 'block');
+		// 	// $('.popup-overlay1').css('display', 'block');
+		// 	// or
+		// 	$('.popup3').slideDown();
+		// 	$('.popup-overlay1').css('display', 'block');
+		// });
 
 
 
@@ -170,6 +170,30 @@ $(function() {
 		 	  }, 50);
 
 		});
+
+
+		// открытие popup3 через 1 минуту
+	 	setTimeout(function() 
+ 	  {
+	 		// $('.popup3').css('display', 'block');
+
+			// поиск button close popup
+			$('#js-close-popup3, .popup-overlay1').on('click', function(e) {
+				// $('.popup3').css('display', 'none');
+				// $('.popup-overlay1').css('display', 'none');
+				// or
+				$('.popup3').slideUp();
+				$('.popup-overlay1').css('display', 'none');
+			});
+
+			// поиск popup и popup-overlay для их открытия
+			// $('.popup3').css('display', 'block');
+			// $('.popup-overlay1').css('display', 'block');
+			// or
+			$('.popup3').slideDown();
+			$('.popup-overlay1').css('display', 'block');
+ 	  }, 60000);
+
 
 
 });
