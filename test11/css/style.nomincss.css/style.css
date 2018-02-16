@@ -1703,39 +1703,43 @@ footer .btn-up a:active {
   }
   .registration {
     padding-left: 100px !important;
+    min-height: 0;
+    padding-bottom: 150px;
   }
-  .registration .right {
+  .registration .wrap .right {
     float: none;
   }
-  .registration .right h2,
-  .registration .right p {
+  .registration .wrap .right h2,
+  .registration .wrap .right p {
     text-align: center;
   }
-  .registration .right .stages-registration {
-    margin-top: 550px;
+  .registration .wrap .right .stages-registration {
+    margin-top: 0;
+    padding-top: 0 !important;
+    background: none;
   }
-  .registration .right .stages-registration h3,
-  .registration .right .stages-registration p {
+  .registration .wrap .right .stages-registration h3,
+  .registration .wrap .right .stages-registration p {
     text-align: center;
   }
-  .registration .right .stages-registration .top .left,
-  .registration .right .stages-registration .top .right {
+  .registration .wrap .right .stages-registration .top .left,
+  .registration .wrap .right .stages-registration .top .right {
     background-position: center 11px;
   }
-  .registration .right .stages-registration .top .left:after,
-  .registration .right .stages-registration .top .right:after {
+  .registration .wrap .right .stages-registration .top .left:after,
+  .registration .wrap .right .stages-registration .top .right:after {
     top: 12%;
     left: 45%;
   }
-  .registration .right .stages-registration .top .right {
+  .registration .wrap .right .stages-registration .top .right {
     background-position: center 0;
   }
-  .registration .right .stages-registration .bottom .left,
-  .registration .right .stages-registration .bottom .right {
+  .registration .wrap .right .stages-registration .bottom .left,
+  .registration .wrap .right .stages-registration .bottom .right {
     background-position: center 11px;
   }
-  .registration .right .stages-registration .bottom .left:after,
-  .registration .right .stages-registration .bottom .right:after {
+  .registration .wrap .right .stages-registration .bottom .left:after,
+  .registration .wrap .right .stages-registration .bottom .right:after {
     top: 10%;
     left: 43%;
   }
