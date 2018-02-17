@@ -261,6 +261,9 @@
 				<div class="right">
 					<h2>КАК ВСЕ ПРОХОДИТ</h2>
 					<div class="stages-registration">
+
+						<img class="rellax" data-rellax-speed="5" src="img/registration.png" alt="воздушный шар" width="450" height="253">
+
 						<div class="top clearfix">
 							<div class="left">
 								<h3>РЕГИСТРАЦИЯ</h3>
@@ -470,6 +473,17 @@
 		<!-- scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="libs/slick/slick.min.js"></script>
+		<script src="libs/rellax.min.js"></script>
+		<script>
+		  // Accepts any class name
+		  var rellax = new Rellax('.rellax', {
+		    speed: -2,
+		    center: true,
+		    round: true,
+		    vertical: true,
+		    horizontal: true
+		  });
+		</script>
 		<script src="js/index-page.js"></script>
 	</body>
 </html>
