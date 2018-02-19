@@ -5,44 +5,35 @@
 
 	$name = $_POST['user_name'];
 	$phone = $_POST['user_phone'];
-	$email = $_POST['user_email'];
+	$apartment_area = $_POST['apartment_area'];
+
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 	$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = 'X-MET7500-temp@mail.ru';                 // Наш логин - временная почта!!!!!!!!
-	$mail->Password = '12345678a';                           // Наш пароль от ящика  - временная почта!!!!!!!!
+	$mail->Username = 'interior-design2018-temp@mail.ru';                 // Наш логин - временная почта!!!!!!!!
+	$mail->Password = 'OjxG6o-PR8lw';                           // Наш пароль от ящика  - временная почта!!!!!!!!
 	$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 	// 587 порт для gmail﻿
 	$mail->Port = 465;                                    // TCP port to connect to
-	 
-
 
 
 
 	// БЛОК ДЛЯ ИЗМЕНЕНИЯ ПОЧТЫ ЗАКАЗЧИКА!!!!!!!!!!!!!
-	$mail->setFrom('X-MET7500-temp@mail.ru', 'Заявка от клиента');   // От кого письмо 
-	$mail->addAddress('X-MET7500@mail.ru');     // ПОЧТА ЗАКАЗЧИКА!!!!!!!!!!!!!!!!!!!!!!!!!!
+	$mail->setFrom('interior-design2018-temp@mail.ru', 'Заявка от клиента');   // От кого письмо 
+	$mail->addAddress('interior-design2018@mail.ru');     // ПОЧТА ЗАКАЗЧИКА!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-
-
-	//$mail->addAddress('ellen@example.com');               // Name is optional
-	//$mail->addReplyTo('info@example.com', 'Information');
-	//$mail->addCC('cc@example.com');
-	//$mail->addBCC('bcc@example.com');
-	//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-	//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
 	$mail->isHTML(true);                                  // Set email format to HTML
 
-	$mail->Subject = 'Пользователь оставил заявку:';
+	$mail->Subject = 'Пользователь оставил заявку на дизайн:';
 	$mail->Body    = '
 		Пользователь оставил свои данные <br> 
 		Имя: ' . $name . ' <br>
-		Телефон: ' . $phone . ' <br>
-		Почта: ' . $email . '';
-	$mail->AltBody = 'Заявка';
+		Телефон: ' . $phone . '<br>
+		Площадь квартиры: ' . $apartment_area . '';
+	$mail->AltBody = 'Заявка на дизайн';
 
 	if(!$mail->send()) {
 	    return false;
