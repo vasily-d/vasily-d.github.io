@@ -37,7 +37,7 @@ $(function() {
 		// variableWidth: true,
 		lazyLoad: 'ondemand',
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 7000,
 		responsive: [
 	    {
 	      breakpoint: 1310,
