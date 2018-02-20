@@ -35,9 +35,9 @@ $(function() {
 		// adaptiveHeight: true,
 		// adaptiveHeight: false,
 		// variableWidth: true,
-		// lazyLoad: 'ondemand',
+		lazyLoad: 'ondemand',
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 5000,
 		responsive: [
 	    {
 	      breakpoint: 1310,
