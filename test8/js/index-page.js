@@ -32,11 +32,31 @@ $(function() {
 	$('.our-works .slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		adaptiveHeight: true,
+		// adaptiveHeight: true,
 		// adaptiveHeight: false,
 		// variableWidth: true,
-		autoplay: true,
-		autoplaySpeed: 2000
+		autoplay: false,
+		autoplaySpeed: 2000,
+		responsive: [
+	    {
+	      breakpoint: 1310,
+	      settings: {
+	        // arrows: false,
+	      }
+	    },
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
 	});
 
 
