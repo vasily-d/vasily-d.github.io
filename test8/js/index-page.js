@@ -28,6 +28,20 @@ $(function() {
 	});
 
 
+	// slick slider basic
+	$('.our-works .slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		// adaptiveHeight: false,
+		// variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+
+
+
+
 
 	// popup
 	// ставим на кнопку которая вызывает данный popup
