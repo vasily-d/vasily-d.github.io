@@ -5,7 +5,7 @@ $(function() {
 		$(".wrap .tab").click(function() {
 			
 			// нужно если slick+tab
-			//$('.slider').slick('slickGoTo', 0, false);
+			$('.slider').slick('slickGoTo', 0, false);
 			
 			$(".wrap .tab").removeClass("active").eq($(this).index()).addClass("active");
 			$(".tab_item").hide().eq($(this).index()).fadeIn()
@@ -35,7 +35,7 @@ $(function() {
 		// adaptiveHeight: true,
 		// adaptiveHeight: false,
 		// variableWidth: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
 	    {
