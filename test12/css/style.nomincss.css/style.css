@@ -62,8 +62,8 @@ body picture {
 body .wrap {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
   max-width: 1230px;
   height: 100%;
 }
@@ -480,6 +480,43 @@ header .social-link a:hover {
 .customer-testimonials .slider2 .slides > div .description p {
   font-weight: 300;
 }
+.posts-index {
+  background-color: #ecf2f5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.posts-index .header-posts .left {
+  float: left;
+}
+.posts-index .header-posts .left h2 {
+  font-size: 25px;
+  padding-bottom: 36px;
+}
+.posts-index .header-posts .right {
+  float: right;
+}
+.posts-index .header-posts .right a {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 30px;
+  background: #fff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.posts-index .header-posts .right a:hover {
+  opacity: .7;
+}
+.posts-index .footer-posts .top-posts {
+  margin-bottom: 60px;
+}
 .email {
   background: #abc2cf;
   padding-left: 100px;
@@ -706,6 +743,7 @@ footer .copyright-btn-call .phone p {
 }
 footer .copyright-btn-call .btn-call {
   float: right;
+  margin-right: 10px;
 }
 footer .copyright-btn-call .btn-call a {
   margin-top: 5px;
@@ -792,7 +830,7 @@ footer .social-link a:hover {
     display: block;
   }
 }
-@media all and (max-width: 610px) {
+@media all and (max-width: 615px) {
   header {
     margin-bottom: 90px;
     position: relative;
@@ -888,21 +926,23 @@ footer .social-link a:hover {
     margin-left: 0;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 420px) {
   footer .social-link {
     float: left;
-    margin-top: 10px;
   }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
   .map-contacts h2 .contacts {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 95%;
-    padding: 30px 35px;
+    padding: 7px;
+  }
+  .map-contacts h2 .contacts .phone {
+    margin-bottom: 5px;
+  }
+  .map-contacts h2 .contacts address {
+    margin-bottom: 10px;
+  }
+  .map-contacts h2 .contacts p {
+    margin-bottom: 10px;
   }
 }
 @media all and (max-width: 1242px) {
