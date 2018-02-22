@@ -1017,6 +1017,16 @@ footer .social-link a:hover {
     display: none;
   }
 }
+@media all and (max-width: 700px) {
+  .catalog-page-articles .wrap .catalog {
+    padding: 5px;
+    width: 30%;
+    margin-right: 2%;
+  }
+  .catalog-page-articles .wrap .post-calc-text-page {
+    width: 68%;
+  }
+}
 .bread-crumbs-page-articles {
   background-color: #eaf1f4;
   margin-bottom: 40px;
@@ -1141,4 +1151,19 @@ footer .social-link a:hover {
 }
 .catalog-page-articles .posts-pagination .pagination ul li:last-child {
   margin-left: 30px;
+}
+.catalog-page-articles .post-calc-text-page {
+  display: inline-block;
+  vertical-align: top;
+  width: 76%;
+}
+.catalog-page-articles .post-calc-text-page .post h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.catalog-page-articles .post-calc-text-page .post .text p {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
