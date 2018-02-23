@@ -73,6 +73,7 @@ header {
 }
 header .logo {
   float: left;
+  margin-left: 5px;
 }
 header .logo a {
   display: block;
@@ -162,7 +163,7 @@ header .social-link a:hover {
 .header-menu ul li {
   display: inline-block;
   vertical-align: top;
-  margin-left: 49px;
+  margin-left: 48px;
   margin-bottom: 20px;
 }
 .header-menu ul li:first-child {
@@ -184,16 +185,16 @@ header .social-link a:hover {
   opacity: .7;
 }
 .slider1 {
-  background: #eaf1f5;
+  background: #eaf1f5 url('../img/slider.png') 590px 0 no-repeat;
 }
-.slider1 .wrap {
-  background: url('../img/slider.png') right 0 no-repeat;
+.slider1 .wrap .slick-dots {
+  bottom: -14px;
 }
 .slider1 .wrap h1 {
   font-family: 'MullerBold';
   color: #006caa;
   font-size: 48px;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 25px;
 }
 .slider1 .wrap p {
@@ -201,12 +202,12 @@ header .social-link a:hover {
   font-size: 20px;
   color: #000;
   line-height: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 .slider1 .wrap a {
   display: inline-block;
-  padding: 20px 125px 20px 35px;
-  margin-bottom: 37px;
+  padding: 16px 125px 16px 35px;
+  margin-bottom: 50px;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -229,7 +230,7 @@ header .social-link a:hover {
 }
 .our-services h2 {
   font-size: 25px;
-  padding: 47px 0 30px 0;
+  padding: 45px 0 30px 0;
 }
 .our-services .services img {
   display: block;
@@ -249,17 +250,17 @@ header .social-link a:hover {
   opacity: .7;
 }
 .our-services .services .service {
-  width: 200px;
+  width: 16%;
   display: inline-block;
   vertical-align: top;
-  margin-right: 42px;
+  margin-right: 4.5%;
   margin-bottom: 40px;
 }
-.our-services .services .service:last-child {
+.our-services .services .service:nth-child(5) {
   margin-right: 0;
 }
 .our-services .services .other-services {
-  width: 687px;
+  width: 56%;
   display: inline-block;
   vertical-align: top;
   padding-top: 55px;
@@ -301,7 +302,7 @@ header .social-link a:hover {
   position: relative;
 }
 .car-diagnostics .wrap > div:first-child {
-  max-width: 680px;
+  max-width: 750px;
 }
 .car-diagnostics .wrap h2 {
   font-size: 25px;
@@ -374,9 +375,6 @@ header .social-link a:hover {
 .car-diagnostics .wrap .popup-car-diagnostics button:hover {
   opacity: .7;
 }
-.how-it-works {
-  text-align: center;
-}
 .how-it-works h2 {
   font-size: 25px;
   padding-top: 90px;
@@ -390,10 +388,10 @@ header .social-link a:hover {
   display: inline-block;
   vertical-align: top;
   width: 178px;
-  margin-right: 27px;
+  margin-right: 20px;
   margin-bottom: 40px;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 .how-it-works .items .item:last-child {
   margin-right: 0;
@@ -413,13 +411,17 @@ header .social-link a:hover {
   width: 44px;
   height: 12px;
 }
-.how-it-works a {
+.how-it-works .items .item a {
   display: inline-block;
+  vertical-align: top;
   padding: 15px 55px;
   margin-bottom: 80px;
+  margin-left: -60px !important;
+  width: 300px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  margin: auto;
   background: linear-gradient(to bottom, #8ec741, #39a072);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -431,38 +433,80 @@ header .social-link a:hover {
   -o-transition: all .2s;
   transition: all .2s;
 }
-.how-it-works a:hover {
+.how-it-works .items .item a:hover {
   opacity: .7;
 }
-.customer-testimonials h2 {
+.customer-testimonials {
+  margin-bottom: 100px;
+}
+.customer-testimonials .wrap h2 {
   font-size: 25px;
   margin-bottom: 30px;
 }
-.customer-testimonials .slider2 {
+.customer-testimonials .wrap .slider2 {
   background: url('../img/customer-testimonials-bg1.jpg') center 0 no-repeat;
   background-size: cover;
 }
-.customer-testimonials .slider2 .slides {
+.customer-testimonials .wrap .slider2 .slick-dots {
+  bottom: -45px;
+}
+.customer-testimonials .wrap .slider2 .slick-dots li {
+  background: #4588c2;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-right: 30px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.customer-testimonials .wrap .slider2 .slick-dots li.slick-active {
+  background: #e5427f;
+}
+.customer-testimonials .wrap .slider2 .slick-dots li button:before {
+  position: absolute;
+  content: '1';
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 1;
+}
+.customer-testimonials .wrap .slider2 .slick-dots li:nth-child(2) button:before {
+  position: absolute;
+  content: '2';
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.customer-testimonials .wrap .slider2 .slick-dots li:nth-child(3) button:before {
+  position: absolute;
+  content: '3';
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.customer-testimonials .wrap .slider2 .slides {
   min-height: 500px;
   text-align: right;
 }
-.customer-testimonials .slider2 .slides > div {
+.customer-testimonials .wrap .slider2 .slides > div {
   display: inline-block;
   width: 525px;
   color: #fff;
   text-align: left;
 }
-.customer-testimonials .slider2 .slides > div h3 {
+.customer-testimonials .wrap .slider2 .slides > div h3 {
   font-size: 18px;
   font-weight: 500;
   padding: 40px 0 20px 0;
 }
-.customer-testimonials .slider2 .slides > div p {
+.customer-testimonials .wrap .slider2 .slides > div p {
   font-weight: 400;
   font-style: 15px;
   margin-bottom: 10px;
 }
-.customer-testimonials .slider2 .slides > div a {
+.customer-testimonials .wrap .slider2 .slides > div a {
   display: inline-block;
   margin-bottom: 40px;
   color: #fff;
@@ -472,19 +516,18 @@ header .social-link a:hover {
   -o-transition: all .2s;
   transition: all .2s;
 }
-.customer-testimonials .slider2 .slides > div a:hover {
+.customer-testimonials .wrap .slider2 .slides > div a:hover {
   opacity: .7;
 }
-.customer-testimonials .slider2 .slides > div .description {
+.customer-testimonials .wrap .slider2 .slides > div .description {
   margin-bottom: 60px;
 }
-.customer-testimonials .slider2 .slides > div .description p {
+.customer-testimonials .wrap .slider2 .slides > div .description p {
   font-weight: 300;
 }
 .posts-index {
   background-color: #ecf2f5;
   padding-top: 40px;
-  padding-bottom: 60px;
 }
 .posts-index .header-posts .left {
   float: left;
@@ -500,6 +543,7 @@ header .social-link a:hover {
   display: block;
   font-weight: 500;
   font-size: 14px;
+  color: #3d699d;
   padding: 12px 30px;
   background: #fff;
   -webkit-border-radius: 25px;
@@ -544,6 +588,7 @@ header .social-link a:hover {
   vertical-align: top;
   width: 48%;
   margin-right: 2%;
+  margin-bottom: 55px;
 }
 .posts-index .footer-posts .top-posts .post:last-child,
 .posts-index .footer-posts .bottom-posts .post:last-child {
@@ -578,6 +623,7 @@ header .social-link a:hover {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 20px;
+  color: #000;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
@@ -593,15 +639,15 @@ header .social-link a:hover {
 }
 .email {
   background: #abc2cf;
-  padding-left: 100px;
-  padding-right: 130px;
   padding-top: 30px;
   padding-bottom: 35px;
-  margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .email .left {
   display: inline-block;
   vertical-align: top;
+  text-align: left;
   padding: 10px 0;
   padding-left: 150px;
   margin-right: 50px;
@@ -616,9 +662,12 @@ header .social-link a:hover {
 .email .right {
   display: inline-block;
 }
+.email .right input + br {
+  display: none;
+}
 .email .right input {
   border: none;
-  padding: 15px 30px;
+  padding: 12px 30px;
   width: 340px;
   margin-right: 20px;
   margin-top: 10px;
@@ -660,7 +709,7 @@ header .social-link a:hover {
   margin-bottom: 70px;
 }
 .auto-fit .wrap {
-  background: url('../img/car2.png') 0 0 no-repeat;
+  background: url('../img/car2.png') -55px 0 no-repeat;
   text-align: right;
 }
 .auto-fit .wrap h2 {
@@ -791,6 +840,7 @@ footer {
 }
 footer .logo {
   float: left;
+  margin-left: 5px;
 }
 footer .logo a {
   display: block;
@@ -1115,7 +1165,7 @@ footer .social-link a:hover {
     margin-right: 10px;
   }
 }
-@media all and (max-width: 572px) {
+@media all and (max-width: 575px) {
   .header-menu ul li {
     margin-right: 50px;
   }
@@ -1185,6 +1235,226 @@ footer .social-link a:hover {
     float: none;
     display: block;
     width: 100%;
+  }
+}
+@media all and (max-width: 990px) {
+  .email .left {
+    padding-left: 105px;
+    margin-right: 5px;
+  }
+  .email .right input {
+    margin-right: 5px;
+    width: 250px;
+  }
+  .email .right button {
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .email .right {
+    text-align: left;
+  }
+  .email .right input {
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .email .right input + br {
+    display: block;
+  }
+}
+@media all and (max-width: 612px) {
+  .email {
+    text-align: right;
+  }
+  .email .left {
+    padding-right: 135px;
+    padding-left: 120px;
+  }
+}
+@media all and (max-width: 455px) {
+  .email .left {
+    padding-right: 10px;
+    padding-left: 125px;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 1000px) {
+  .customer-testimonials .slider2 {
+    background-image: url('../img/customer-testimonials-bg2-1000.jpg') !important;
+    background-size: cover;
+  }
+  .customer-testimonials .slider2 .slides > div {
+    width: 400px;
+  }
+}
+@media all and (max-width: 768px) {
+  .customer-testimonials .slider2 {
+    background-image: url('../img/customer-testimonials-bg2-768.jpg') !important;
+    background-size: cover;
+  }
+  .customer-testimonials .slider2 .slides > div {
+    max-width: 360px;
+  }
+}
+@media all and (max-width: 480px) {
+  .customer-testimonials .slider2 {
+    background: #2b2f32 url('../img/customer-testimonials-bg2-480.jpg') center 0 no-repeat !important;
+    background-size: 100%;
+  }
+  .customer-testimonials .slider2 .slides > div {
+    max-width: 100%;
+    padding: 20px;
+    padding-top: 295px;
+  }
+}
+@media all and (max-width: 320px) {
+  .customer-testimonials .slider2 {
+    background: #2b2f32 url('../img/customer-testimonials-bg2-320.jpg') center 0 no-repeat;
+    background-size: 100%;
+  }
+}
+@media all and (max-width: 1233px) {
+  .how-it-works .items .item a {
+    margin-top: 40px;
+    margin-left: 0 !important;
+  }
+  .how-it-works .items .item.last-button {
+    width: 300px;
+  }
+  .how-it-works .items .item.last:after {
+    display: none !important;
+  }
+}
+@media all and (max-width: 425px) {
+  .how-it-works .items .item:nth-child(2n) {
+    margin-left: 110px !important;
+  }
+  .how-it-works .items .item:nth-child(2n):after {
+    right: 150px;
+  }
+  .how-it-works .items .item:nth-child(2n+1) {
+    margin-left: -50px;
+  }
+  .how-it-works .items .last-button {
+    margin-left: 0 !important;
+  }
+  .how-it-works .items .last-button:after {
+    right: 0;
+  }
+}
+@media all and (max-width: 1000px) {
+  .our-services .services .service {
+    width: 21%;
+  }
+  .our-services .services .service:nth-child(4) {
+    margin-right: 0;
+  }
+  .our-services .services .service:nth-child(5) {
+    margin-right: 4.5%;
+  }
+  .our-services .services .other-services {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .our-services .services .service {
+    width: 28.2%;
+  }
+  .our-services .services .service:nth-child(4) {
+    margin-right: 4.5%;
+  }
+  .our-services .services .service:nth-child(3) {
+    margin-right: 0;
+  }
+  .our-services .services .other-services {
+    width: 61%;
+    padding-top: 55px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media all and (max-width: 480px) {
+  .our-services .services .service {
+    width: 45%;
+  }
+  .our-services .services .service:nth-child(2n) {
+    margin-right: 0;
+  }
+  .our-services .services .service:nth-child(3) {
+    margin-right: 4.5%;
+  }
+  .our-services .services .other-services {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media all and (max-width: 380px) {
+  .our-services .services .service {
+    width: 100%;
+    text-align: center;
+  }
+  .our-services .services .service img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width: 480px) {
+  .slider1 {
+    text-align: center;
+  }
+}
+@media all and (max-width: 1000px) {
+  .auto-fit .wrap {
+    background-position: -310px;
+  }
+  .auto-fit .form-auto-fit {
+    padding: 30px !important;
+  }
+  .auto-fit .form-auto-fit input {
+    margin-right: 10px !important;
+  }
+}
+@media all and (max-width: 840px) {
+  .auto-fit .wrap {
+    background-position: -440px;
+  }
+  .auto-fit .form-auto-fit {
+    padding: 25px !important;
+  }
+  .auto-fit .form-auto-fit input {
+    margin-right: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .auto-fit .form-auto-fit button {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media all and (max-width: 700px) {
+  .auto-fit .form-auto-fit {
+    padding: 25px !important;
+    text-align: center;
+  }
+  .auto-fit .form-auto-fit input {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 430px) {
+  .auto-fit .wrap {
+    background-position: -450px;
+  }
+  .auto-fit .form-auto-fit {
+    padding: 25px !important;
+    text-align: left;
+  }
+  .auto-fit .form-auto-fit input {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 .bread-crumbs-page-articles {

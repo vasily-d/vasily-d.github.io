@@ -4,6 +4,7 @@ $(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
+		arrows: false,
 		dots: true,
 		autoplaySpeed: 2000
 	});
@@ -12,7 +13,9 @@ $(function() {
 	$('.customer-testimonials .slider2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
+		arrows: false,
+		dots: true,
 		autoplaySpeed: 2000
 	});
 
