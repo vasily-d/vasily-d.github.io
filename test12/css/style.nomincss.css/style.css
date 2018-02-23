@@ -301,7 +301,7 @@ header .social-link a:hover {
   position: relative;
 }
 .car-diagnostics .wrap > div:first-child {
-  max-width: 825px;
+  max-width: 680px;
 }
 .car-diagnostics .wrap h2 {
   font-size: 25px;
@@ -343,6 +343,7 @@ header .social-link a:hover {
 }
 .car-diagnostics .wrap .popup-car-diagnostics input {
   margin-bottom: 10px;
+  margin-right: 10px;
   padding: 12px 20px;
   border: none;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -514,8 +515,81 @@ header .social-link a:hover {
 .posts-index .header-posts .right a:hover {
   opacity: .7;
 }
-.posts-index .footer-posts .top-posts {
-  margin-bottom: 60px;
+.posts-index .footer-posts .right-bottom {
+  display: none;
+  text-align: center;
+}
+.posts-index .footer-posts .right-bottom a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 30px;
+  background: #fff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.posts-index .footer-posts .right-bottom a:hover {
+  opacity: .7;
+}
+.posts-index .footer-posts .top-posts .post,
+.posts-index .footer-posts .bottom-posts .post {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin-right: 2%;
+}
+.posts-index .footer-posts .top-posts .post:last-child,
+.posts-index .footer-posts .bottom-posts .post:last-child {
+  margin-right: 0;
+}
+.posts-index .footer-posts .top-posts .post .left,
+.posts-index .footer-posts .bottom-posts .post .left {
+  float: left;
+  margin-right: 20px;
+  font-size: 0;
+}
+.posts-index .footer-posts .top-posts .post .right,
+.posts-index .footer-posts .bottom-posts .post .right {
+  overflow: hidden;
+}
+.posts-index .footer-posts .top-posts .post .right h3,
+.posts-index .footer-posts .bottom-posts .post .right h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #d25182;
+  margin-bottom: 20px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.posts-index .footer-posts .top-posts .post .right h3:hover,
+.posts-index .footer-posts .bottom-posts .post .right h3:hover {
+  opacity: .7;
+}
+.posts-index .footer-posts .top-posts .post .right p,
+.posts-index .footer-posts .bottom-posts .post .right p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.posts-index .footer-posts .top-posts .post .right p:hover,
+.posts-index .footer-posts .bottom-posts .post .right p:hover {
+  opacity: .7;
+}
+.posts-index .footer-posts .top-posts .post .right time,
+.posts-index .footer-posts .bottom-posts .post .right time {
+  padding-left: 20px;
+  background: url('../img/calendar.png') 0 0 no-repeat;
 }
 .email {
   background: #abc2cf;
@@ -929,6 +1003,63 @@ footer .social-link a:hover {
 @media all and (max-width: 420px) {
   footer .social-link {
     float: left;
+  }
+}
+@media all and (max-width: 768px) {
+  .posts-index .footer-posts .top-posts .post:first-child,
+  .posts-index .footer-posts .bottom-posts .post:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .posts-index .footer-posts .top-posts .post:last-child,
+  .posts-index .footer-posts .bottom-posts .post:last-child {
+    display: none;
+  }
+}
+@media all and (max-width: 380px) {
+  .posts-index .header-posts .right a {
+    display: none;
+  }
+  .posts-index .footer-posts .right-bottom {
+    display: block;
+  }
+  .posts-index .footer-posts .top-posts .post:first-child .left,
+  .posts-index .footer-posts .bottom-posts .post:first-child .left {
+    float: none;
+    display: block;
+  }
+  .posts-index .footer-posts .top-posts .post:first-child .left img,
+  .posts-index .footer-posts .bottom-posts .post:first-child .left img {
+    width: 100%;
+  }
+}
+@media all and (max-width: 970px) {
+  .car-diagnostics .wrap > div:first-child {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .car-diagnostics .wrap h2 {
+    padding-top: 50px;
+  }
+  .car-diagnostics .wrap .popup-car-diagnostics {
+    position: static;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .car-diagnostics .wrap .popup-car-diagnostics h3 {
+    padding: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .car-diagnostics .wrap .popup-car-diagnostics h3 br {
+    display: none;
+  }
+  .car-diagnostics .wrap .popup-car-diagnostics input[name="name"] + br {
+    display: none;
   }
 }
 @media all and (max-width: 768px) {
