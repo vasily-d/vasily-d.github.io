@@ -13,7 +13,7 @@ $(function() {
 	$('.customer-testimonials .slider2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		arrows: false,
 		dots: true,
 		autoplaySpeed: 2000
@@ -128,6 +128,12 @@ $(function() {
 	    $('.popup-overlay').css('display', 'none');
 	  });
 	});
+
+	// slider2
+	// $('.customer-testimonials .slider2').on('beforeChange', function(slick, slide){
+ //      // console.log($('.customer-testimonials .slider2').animate({"background-position": "-=500px"}, "slow"););
+ //      // left
+ //  });
 
 
 

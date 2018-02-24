@@ -187,6 +187,9 @@ header .social-link a:hover {
 .slider1 {
   background: #eaf1f5 url('../img/slider.png') 590px 0 no-repeat;
 }
+.slider1 .wrap .slick-slide {
+  outline: none;
+}
 .slider1 .wrap .slick-dots {
   bottom: -14px;
 }
@@ -211,6 +214,7 @@ header .social-link a:hover {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
+  margin-left: 3px;
   background: url('../img/slider-small-car.png') 200px 50% no-repeat, url('../img/slider-small-car2.png') 240px 55% no-repeat, linear-gradient(to bottom, #3aa1ea, #4e75a3);
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -443,10 +447,6 @@ header .social-link a:hover {
   font-size: 25px;
   margin-bottom: 30px;
 }
-.customer-testimonials .wrap .slider2 {
-  background: url('../img/customer-testimonials-bg1.jpg') center 0 no-repeat;
-  background-size: cover;
-}
 .customer-testimonials .wrap .slider2 .slick-dots {
   bottom: -45px;
 }
@@ -488,7 +488,16 @@ header .social-link a:hover {
 }
 .customer-testimonials .wrap .slider2 .slides {
   min-height: 500px;
+  position: relative;
   text-align: right;
+}
+.customer-testimonials .wrap .slider2 .slides img {
+  height: 500px;
+}
+.customer-testimonials .wrap .slider2 .slides > div {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .customer-testimonials .wrap .slider2 .slides > div {
   display: inline-block;
@@ -1281,38 +1290,29 @@ footer .social-link a:hover {
   }
 }
 @media all and (max-width: 1000px) {
-  .customer-testimonials .slider2 {
-    background-image: url('../img/customer-testimonials-bg2-1000.jpg') !important;
-    background-size: cover;
+  .customer-testimonials .slider2 img {
+    display: block;
+    object-fit: cover;
   }
   .customer-testimonials .slider2 .slides > div {
     width: 400px;
   }
 }
 @media all and (max-width: 768px) {
-  .customer-testimonials .slider2 {
-    background-image: url('../img/customer-testimonials-bg2-768.jpg') !important;
-    background-size: cover;
-  }
   .customer-testimonials .slider2 .slides > div {
     max-width: 360px;
   }
 }
 @media all and (max-width: 480px) {
-  .customer-testimonials .slider2 {
-    background: #2b2f32 url('../img/customer-testimonials-bg2-480.jpg') center 0 no-repeat !important;
-    background-size: 100%;
+  .customer-testimonials .slider2 .slides {
+    padding-bottom: 595px;
+    background: #2b2f32;
+    overflow: hidden;
   }
   .customer-testimonials .slider2 .slides > div {
-    max-width: 100%;
-    padding: 20px;
-    padding-top: 295px;
-  }
-}
-@media all and (max-width: 320px) {
-  .customer-testimonials .slider2 {
-    background: #2b2f32 url('../img/customer-testimonials-bg2-320.jpg') center 0 no-repeat;
-    background-size: 100%;
+    padding: 10px;
+    width: auto !important;
+    margin-top: 485px;
   }
 }
 @media all and (max-width: 1233px) {
@@ -1393,7 +1393,7 @@ footer .social-link a:hover {
 }
 @media all and (max-width: 380px) {
   .our-services .services .service {
-    width: 100%;
+    width: 97%;
     text-align: center;
   }
   .our-services .services .service img {
@@ -2183,7 +2183,7 @@ footer .social-link a:hover {
 .form1,
 .form2,
 .form3 {
-  top: 150px;
+  top: 80px;
 }
 .close {
   position: absolute;
