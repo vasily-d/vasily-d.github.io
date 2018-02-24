@@ -185,7 +185,7 @@ header .social-link a:hover {
   opacity: .7;
 }
 .slider1 {
-  background: #eaf1f5 url('../img/slider.png') 590px 0 no-repeat;
+  background: #eaf1f5 url('../img/slider.png') 670px 0 no-repeat;
 }
 .slider1 .wrap .slick-slide {
   outline: none;
@@ -577,6 +577,7 @@ header .social-link a:hover {
   font-weight: 500;
   font-size: 14px;
   padding: 12px 30px;
+  margin-bottom: 20px;
   background: #fff;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -727,11 +728,19 @@ header .social-link a:hover {
   color: #fff;
   display: inline-block;
   margin-top: 45px;
-  padding-left: 45px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 40px;
+  position: relative;
+}
+.auto-fit .wrap h2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -45px;
   background: url('../img/magnifier2.png') 0 0 no-repeat;
+  width: 42px;
+  height: 43px;
 }
 .auto-fit .wrap .form-auto-fit {
   display: inline-block;
@@ -1111,14 +1120,25 @@ footer .social-link a:hover {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 42px;
     text-align: left;
+    background-position: -2px 0;
   }
   .car-diagnostics .wrap .popup-car-diagnostics h3 br {
     display: none;
   }
   .car-diagnostics .wrap .popup-car-diagnostics input[name="name"] + br {
     display: none;
+  }
+}
+@media all and (max-width: 482px) {
+  .car-diagnostics .wrap .popup-car-diagnostics {
+    padding: 20px;
+  }
+}
+@media all and (max-width: 432px) {
+  .car-diagnostics .wrap .popup-car-diagnostics h3 {
+    background-position: -2px 12px;
   }
 }
 @media all and (max-width: 768px) {
@@ -1283,6 +1303,9 @@ footer .social-link a:hover {
   }
 }
 @media all and (max-width: 455px) {
+  .email .wrap {
+    text-align: left;
+  }
   .email .left {
     padding-right: 10px;
     padding-left: 125px;
@@ -1442,6 +1465,17 @@ footer .social-link a:hover {
   .auto-fit .form-auto-fit input {
     width: 48%;
     margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 558px) {
+  .auto-fit .wrap h2 {
+    max-width: 380px;
+  }
+}
+@media all and (max-width: 450px) {
+  .auto-fit .wrap h2 {
+    font-size: 28px;
+    max-width: 260px;
   }
 }
 @media all and (max-width: 430px) {
@@ -1669,7 +1703,7 @@ footer .social-link a:hover {
 }
 .form1 {
   width: 920px;
-  background: url('../img/textpage-form1.jpg') 0 0 no-repeat;
+  background: url('../img/textpage-form1.png') 0 0 no-repeat;
   background-size: cover;
 }
 .form1 form {
@@ -1714,7 +1748,7 @@ footer .social-link a:hover {
 }
 .form2 {
   width: 920px;
-  background: url('../img/textpage-form2.jpg') 0 0 no-repeat;
+  background: url('../img/textpage-form2.png') 0 0 no-repeat;
   background-size: cover;
 }
 .form2 h2 {
@@ -1783,7 +1817,7 @@ footer .social-link a:hover {
 }
 .form3 {
   width: 920px;
-  background: url('../img/textpage-form3.jpg') 0 0 no-repeat;
+  background: url('../img/textpage-form3.png') 0 0 no-repeat;
   background-size: cover;
 }
 .form3 form {
@@ -1916,7 +1950,7 @@ footer .social-link a:hover {
   padding-bottom: 35px;
 }
 .form4-osago1 form .bottom {
-  background: url('../img/textpage-form4.jpg') 0 0 no-repeat;
+  background: url('../img/textpage-form4.png') 0 0 no-repeat;
   background-size: cover;
   text-align: center;
   padding: 35px 0 25px 0;
@@ -2098,7 +2132,7 @@ footer .social-link a:hover {
   padding-bottom: 35px;
 }
 .form5-osago2 form .bottom {
-  background: url('../img/textpage-form4.jpg') 0 0 no-repeat;
+  background: url('../img/textpage-form4.png') 0 0 no-repeat;
   background-size: cover;
   text-align: center;
   padding: 35px 0 25px 0;
