@@ -406,7 +406,7 @@ header .social-link a:hover {
   content: '';
   position: absolute;
   top: 20%;
-  right: -30px;
+  right: -28px;
   background: url('../img/how-it-works-icon7.png') 0 0 no-repeat;
   width: 44px;
   height: 12px;
@@ -1463,11 +1463,45 @@ footer .social-link a:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+  body .form1 form {
+    padding: 35px 20px 25px 20px;
+  }
 }
 @media all and (max-width: 530px) {
   body .form1 form input:nth-child(2),
   body .form1 form input:nth-child(1) {
     margin-right: 0 !important;
+  }
+}
+@media all and (max-width: 1000px) {
+  body .form2 {
+    width: 99%;
+  }
+  body .form2 form {
+    padding: 35px 20px 25px 20px;
+  }
+  body .form2 form .left {
+    width: 45%;
+  }
+  body .form2 form .right {
+    width: 53%;
+  }
+}
+@media all and (max-width: 480px) {
+  body .form2 form {
+    text-align: left;
+  }
+  body .form2 form .left {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  body .form2 form .left input {
+    width: 70%;
+  }
+  body .form2 form .right {
+    display: block;
+    width: 100%;
   }
 }
 .form1 {
@@ -1615,7 +1649,7 @@ footer .social-link a:hover {
   color: #000;
 }
 .form3 form > div {
-  width: 58%;
+  width: 53%;
   display: inline-block;
 }
 .form3 form > div button {
@@ -1960,7 +1994,7 @@ footer .social-link a:hover {
 .form1,
 .form2,
 .form3 {
-  top: 100px;
+  top: 160px;
 }
 .close {
   position: absolute;

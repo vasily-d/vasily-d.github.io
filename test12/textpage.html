@@ -37,7 +37,7 @@
 						<p>Режим работы: Пн-Пт с 9:00 до 20:00</p>
 					</div>
 					<div class="btn-call">
-						<a href="#">Обратный звонок</a>
+						<a href="#" class="js-popup1">Обратный звонок</a>
 					</div>
 				</div>
 				
@@ -64,9 +64,9 @@
 		  	  <li><a href="index.html">Главная страница</a></li>
 		  	  <li><a href="services.html">Услуги</a></li>
 		  	  <li class="active"><a href="formalization.html">Оформление ДКП</a></li>
-		  	  <li><a href="diagnostics.html">Диагностика и ЛКП</a></li>
-		  	  <li><a href="osago.html">Подбор ОСАГО</a></li>
-		  	  <li><a href="transport-tax.html">Транспортный налог</a></li>
+		  	  <li><a href="diagnostics.html" class="js-popup3">Диагностика и ЛКП</a></li>
+		  	  <li><a href="osago.html" class="js-popup4">Подбор ОСАГО</a></li>
+		  	  <li><a href="transport-tax.html" class="js-popup5">Транспортный налог</a></li>
 		  	  <li><a href="online.html">Онлайн заявка</a></li>
 		  	</ul>
 		  </div>
@@ -81,8 +81,6 @@
 				</ul>
 			</div>
 		</section>
-
-
 
 		<section class="catalog-page-articles">
 			<div class="wrap">
@@ -136,7 +134,7 @@
 					</address>
 					<p>Режим работы: Пн-Пт с 9:00 до 20:00</p>
 
-					<a class="btn-call" href="#">Обратный звонок</a>
+					<a class="btn-call js-popup1" href="#">Обратный звонок</a>
 				</div>
 			</h2>
 			
@@ -160,7 +158,7 @@
 						<p>2017© АвтоКритик.&nbsp;&nbsp;&nbsp;&nbsp;Все права защищены.</p>
 					</div>
 					<div class="btn-call">
-						<a href="#">Обратный звонок</a>
+						<a href="#" class="js-popup1">Обратный звонок</a>
 					</div>
 				</div>
 				
@@ -184,6 +182,158 @@
 			<p class="footer-class">2017© АвтоКритик.&nbsp;&nbsp;&nbsp;&nbsp;Все права защищены.</p>
 
 		</footer>
+
+
+		<div class="form1">
+			<form action="#" method="POST">
+				<input type="text" name="name" placeholder="Ваше имя" required>
+				<input type="text" name="phone" placeholder="Номер телефона" required>
+				<input type="text" name="metro" placeholder="Ближайшее метро" required><br>
+				<button type="submit">Отправить заявку</button>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
+
+		<div class="form3">
+			<form action="#" method="POST">
+				<h2>Мне нужна диагностика и ЛКП</h2>
+
+				<input type="text" name="name" placeholder="Ваше имя" required>
+				<input type="text" name="phone" placeholder="Номер телефона" required>
+				<input type="text" name="metro" placeholder="Ближайшее метро" required><br>
+				<input type="text" name="type_car" placeholder="Марка автомобиля" required>
+				<div>
+					<button type="submit">Отправить заявку</button>
+				</div>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
+
+		<div class="form4-osago1">
+			<form action="#" method="POST">
+				<div class="top">
+					<h2>Калькулятор ОСАГО</h2><br>
+					
+					<div class="region">
+						<label for="region">Регион</label><br>
+						<input type="text" id="region" name="region_form" placeholder="Москва, Пушкино" required>
+					</div>
+
+					<div class="moto_power">
+						<label for="moto_power">Мощность двигателя, л.с.</label><br>
+						<select name="moto_power_form" id="moto_power">
+							<option value="up50to70">Свыше 50 до 70 включительно</option>
+							<option value="up50to70">Свыше 50 до 70 включительно</option>
+							<option value="up50to70">Свыше 50 до 70 включительно</option>
+						</select>
+					</div>
+
+					<div class="age">
+						<label for="age">Возраст и стаж</label><br>
+						<select name="age_form" id="age">
+							<option value="age1">Без ограничений</option>
+							<option value="age1">Без ограничений</option>
+							<option value="age1">Без ограничений</option>
+						</select>							
+					</div>
+
+					<p class="price">Стоимость Вашего полиса <span>7.800 руб</span> включая доставку в пределах МКАД.</p>
+					<p class="discount">В зависимости от Вашего стажа возможны скидки до 50%, точную сумму уточняйте у оператора</p>
+				</div>
+
+				<div class="bottom">
+					<label for="name">Заказать полис с доставкой</label><br>
+					<input type="text" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="phone" placeholder="Номер телефона" required>
+					<input type="text" name="metro" placeholder="Ближайшее метро" required>
+					<button type="submit">Отправить заявку</button>
+				</div>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
+
+		<div class="form5-osago2">
+			<form action="#" method="POST">
+				<div class="top">
+					
+					<div class="top1">
+						<h2>Калькулятор ОСАГО</h2><br>
+
+						<div class="region-osago">
+							<label for="region2">Регион</label><br>
+							<input type="text" id="region2" name="region_form" placeholder="Москва, Пушкино" required>
+						</div>
+
+						<div class="moto-power">
+							<label for="moto_power2">Мощность двигателя, л.с.</label><br>
+							<select name="moto_power_form" id="moto_power2">
+								<option value="up50to70">Свыше 50 до 70 включительно</option>
+								<option value="up50to70">Свыше 50 до 70 включительно</option>
+								<option value="up50to70">Свыше 50 до 70 включительно</option>
+							</select>
+						</div>
+
+						<div class="age-drive">
+							<label for="age2">Возраст и стаж</label><br>
+							<select name="age_form" id="age2">
+								<option value="age1">Без ограничений</option>
+								<option value="age2">Без ограничений</option>
+								<option value="age3">Без ограничений</option>
+							</select>
+						</div>							
+					</div>
+
+					<div class="top2">
+						<h2>Транспортный налог и налог на роскошь</h2><br>
+
+						<div class="year-car">
+							<label for="year">Год</label><br>
+							<select name="year_form" id="year">
+								<option value="2009">2009</option>
+								<option value="2010">2010</option>
+								<option value="2011">2011</option>
+							</select>
+						</div>
+
+						<div class="brand-power">
+							<label for="brand_power">Марка автомобиля</label><br>
+							<select name="brand_power_form" id="brand_power">
+								<option value="mazda">Mazda</option>
+								<option value="mazda">Mazda</option>
+								<option value="mazda">Mazda</option>
+							</select>
+						</div>
+
+						<div class="model-car">
+							<label for="model_car">Модель</label><br>
+							<select name="model_car_form" id="model_car">
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+							</select>							
+						</div>							
+						
+						<p class="price">Стоимость Вашего полиса <span>7.800 руб</span> включая доставку в пределах МКАД.</p>
+						<p class="price2">В том числе  налог <span>2566 руб.</span> на роскошь</p>
+						<p class="discount">В зависимости от Вашего стажа возможны скидки до 50%, точную сумму уточняйте у оператора</p>
+					</div>
+
+				</div>
+
+				<div class="bottom">
+					<label for="name">Заказать полис с доставкой</label><br>
+					<input type="text" id="name" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="phone" placeholder="Номер телефона" required>
+					<input type="text" name="metro" placeholder="Ближайшее метро" required>
+					<button type="submit">Отправить заявку</button>
+				</div>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
 
 
 
