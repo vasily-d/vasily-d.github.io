@@ -1626,6 +1626,47 @@ footer .social-link a:hover {
     width: 80%;
   }
 }
+@media all and (max-width: 1000px) {
+  body .form3 {
+    width: 99%;
+  }
+  body .form3 form {
+    padding: 35px 20px 25px 20px;
+    position: relative;
+  }
+  body .form3 form .left,
+  body .form3 form .right {
+    width: 49%;
+    margin-right: 2%;
+  }
+  body .form3 form .left input,
+  body .form3 form .right input {
+    width: 100%;
+  }
+  body .form3 form .right {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  body .form3 form button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media all and (max-width: 480px) {
+  body .form3 form .left,
+  body .form3 form .right {
+    width: 100%;
+  }
+  body .form3 form button {
+    width: 250px;
+    left: 47%;
+  }
+}
 .form1 {
   width: 920px;
   background: url('../img/textpage-form1.jpg') 0 0 no-repeat;
@@ -1748,15 +1789,30 @@ footer .social-link a:hover {
 .form3 form {
   text-align: center;
   padding: 35px 0 25px 0;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .form3 form h2 {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
   text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-bottom: 30px;
+}
+.form3 form .left {
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: top;
+}
+.form3 form .right {
+  width: 66.66%;
+  display: inline-block;
+  vertical-align: top;
+}
+.form3 form .right input {
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
 }
 .form3 form input {
   font-size: 15px;
@@ -1770,11 +1826,7 @@ footer .social-link a:hover {
 .form3 form input::placeholder {
   color: #000;
 }
-.form3 form > div {
-  width: 53%;
-  display: inline-block;
-}
-.form3 form > div button {
+.form3 form button {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -1791,7 +1843,7 @@ footer .social-link a:hover {
   -o-transition: all .2s;
   transition: all .2s;
 }
-.form3 form > div button:hover {
+.form3 form button:hover {
   opacity: .7;
 }
 .form4-osago1 {

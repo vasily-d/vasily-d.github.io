@@ -500,14 +500,16 @@
 		<div class="form3">
 			<form action="#" method="POST">
 				<h2>Мне нужна диагностика и ЛКП</h2>
-
-				<input type="text" name="name" placeholder="Ваше имя" required>
-				<input type="text" name="phone" placeholder="Номер телефона" required>
-				<input type="text" name="metro" placeholder="Ближайшее метро" required><br>
-				<input type="text" name="type_car" placeholder="Марка автомобиля" required>
-				<div>
+				
+				<div class="left">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="type_car" placeholder="Марка автомобиля" required>
+				</div><div class="right">
+					<input type="text" name="phone" placeholder="Номер телефона" required>
+					<input type="text" name="metro" placeholder="Ближайшее метро" required><br>
 					<button type="submit">Отправить заявку</button>
 				</div>
+
 			</form>
 			<button type="button" class="close" id="js-close-popup"></button>
 		</div>
