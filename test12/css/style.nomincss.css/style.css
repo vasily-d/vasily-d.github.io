@@ -576,6 +576,7 @@ header .social-link a:hover {
   display: inline-block;
   font-weight: 500;
   font-size: 14px;
+  color: #3d699d;
   padding: 12px 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -1138,7 +1139,7 @@ footer .social-link a:hover {
 }
 @media all and (max-width: 432px) {
   .car-diagnostics .wrap .popup-car-diagnostics h3 {
-    background-position: -2px 12px;
+    background-position: 0px 12px;
   }
 }
 @media all and (max-width: 768px) {
