@@ -42,22 +42,37 @@ $(function() {
 	    {
 	      breakpoint: 1310,
 	      settings: {
+	      	arrows: true
 	        // arrows: false,
 	      }
 	    },
 	    {
 	      breakpoint: 1000,
 	      settings: {
-	        slidesToShow: 2
+	        slidesToShow: 2,
+	        arrows: true
 	      }
 	    },
 	    {
 	      breakpoint: 600,
 	      settings: {
-	        slidesToShow: 1
+	        slidesToShow: 1,
+	        arrows: true
 	      }
 	    }
 	  ]
+	});
+
+	// slick slider basic
+	$('.slider-reviews').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		// centerMode: true,
+		// variableWidth: true,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 
 
@@ -97,7 +112,11 @@ $(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Заявка отправлена!");
+
+			// alert("Заявка отправлена!");
+			window.location.href = "../mailer/thanks.html";
+
+			
 			$("form").trigger("reset");
 			
 			$('.popup').slideUp();
