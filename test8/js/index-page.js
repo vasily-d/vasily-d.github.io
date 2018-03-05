@@ -28,40 +28,45 @@ $(function() {
 	});
 
 
-	// slick slider basic
-	$('.our-works .slider').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		// adaptiveHeight: true,
-		// adaptiveHeight: false,
-		// variableWidth: true,
-		lazyLoad: 'ondemand',
-		autoplay: true,
-		autoplaySpeed: 7000,
-		responsive: [
-	    {
-	      breakpoint: 1310,
-	      settings: {
-	      	arrows: true
-	        // arrows: false,
-	      }
-	    },
-	    {
-	      breakpoint: 1000,
-	      settings: {
-	        slidesToShow: 2,
-	        arrows: true
-	      }
-	    },
-	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 1,
-	        arrows: true
-	      }
-	    }
-	  ]
-	});
+
+	// slick slider
+	// $('.our-works .slider').slick({
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 1,
+	// 	// adaptiveHeight: true,
+	// 	// adaptiveHeight: false,
+	// 	// variableWidth: true,
+
+	// 	// centerMode: true,
+ //  	variableWidth: true,
+
+	// 	lazyLoad: 'ondemand',
+	// 	autoplay: true,
+	// 	autoplaySpeed: 7000,
+	// 	responsive: [
+	//     {
+	//       breakpoint: 1310,
+	//       settings: {
+	//       	arrows: true
+	//         // arrows: false,
+	//       }
+	//     },
+	//     {
+	//       breakpoint: 1000,
+	//       settings: {
+	//         slidesToShow: 2,
+	//         arrows: true
+	//       }
+	//     },
+	//     {
+	//       breakpoint: 600,
+	//       settings: {
+	//         slidesToShow: 1,
+	//         arrows: true
+	//       }
+	//     }
+	//   ]
+	// });
 
 	// slick slider basic
 	$('.slider-reviews').slick({
@@ -71,7 +76,7 @@ $(function() {
 		// centerMode: true,
 		// variableWidth: true,
 		dots: true,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 5000
 	});
 
@@ -142,6 +147,56 @@ $(function() {
 		// change one
 		$(this).attr('src', current);
 	});
+
+
+	// событие по скроллу до элемента - показать слайдер
+	window.onscroll = function () {	
+
+		if($(window).scrollTop() >= 2700) {
+
+			$('.our-works .slider').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				// adaptiveHeight: true,
+				// adaptiveHeight: false,
+				// variableWidth: true,
+
+				centerMode: true,
+		  	variableWidth: true,
+
+				lazyLoad: 'ondemand',
+				autoplay: true,
+				autoplaySpeed: 4000,
+				responsive: [
+			    {
+			      breakpoint: 1310,
+			      settings: {
+			      	arrows: true
+			        // arrows: false,
+			      }
+			    },
+			    {
+			      breakpoint: 1000,
+			      settings: {
+			        slidesToShow: 2,
+			        arrows: true
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 1,
+			        arrows: true
+			      }
+			    }
+			  ]
+			});
+
+			$('.our-works .wrap .tab_content').css('display', 'block');
+			$('.our-works .wrap .tab_content').css('visibility', 'visible');
+			// console.log($(window).scrollTop());
+		};
+	}
 
 
 });
