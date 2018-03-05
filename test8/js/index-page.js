@@ -1,14 +1,4 @@
 $(function() {
-	// lazy load
-	[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-	  img.setAttribute('src', img.getAttribute('data-src'));
-	  img.onload = function() {
-		img.removeAttribute('data-src');
-	  };
-	});
-
-
-
 	// tabs jquery
 	$(function() {
 		$(".tab_item").not(":first").hide();
@@ -205,6 +195,16 @@ $(function() {
 			$('.our-works .wrap .tab_content').css('display', 'block');
 			$('.our-works .wrap .tab_content').css('visibility', 'visible');
 			// console.log($(window).scrollTop());
+
+
+
+			// lazy load
+			[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+			  img.setAttribute('src', img.getAttribute('data-src'));
+			  img.onload = function() {
+					img.removeAttribute('data-src');
+			  };
+			});
 		};
 	}
 
