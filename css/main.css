@@ -78,7 +78,7 @@ button:hover {
 	right: 0;
 	z-index: 300;
 
-	/*display: none;*/
+	display: none;
 }
 
 /* top menu */
