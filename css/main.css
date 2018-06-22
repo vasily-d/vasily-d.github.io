@@ -249,7 +249,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	width: 33%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .stack-top .stack-item p, .stack-bottom .stack-item p {
@@ -268,7 +268,7 @@ button:hover {
 	background: url(../img/works.jpg) no-repeat top center;
 	background-size: cover;
 
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -290,7 +290,7 @@ button:hover {
 }
 
 .portfolio-links {
-	margin: 20px 0;
+	margin: 10px 0;
 	font-size: 22px;
 	color: #000;
 }
@@ -337,7 +337,7 @@ button:hover {
 }
 
 .portfolio2 p {
-	margin-top: 10px;
+	padding-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 	font-size: 22px;
