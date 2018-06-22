@@ -337,6 +337,7 @@ button:hover {
 }
 
 .portfolio2 p {
+	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 	font-size: 22px;
@@ -432,6 +433,11 @@ button:hover {
 @media all and (max-width: 992px) {
 	.stack-top .stack-item, .stack-bottom .stack-item {
 		width: 49%;
+	}
+}
+@media all and (max-width: 860px) {
+	.main-menu {
+		background-size: cover;
 	}
 }
 @media all and (max-width: 576px) {
