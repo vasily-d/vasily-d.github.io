@@ -58,7 +58,7 @@ button:hover {
 	color: #fff;
 	text-shadow: 0px 0px 10px #000;
 	
-	padding: 18px;	
+	padding: 11px 18px 18px;	
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
@@ -84,7 +84,7 @@ button:hover {
 /* top menu */
 .main-menu {
 	background: url(../img/bg_menu.png) repeat-x;
-	background-size: cover;
+	/*background-size: cover;*/
 	/*min-height: 54px;*/
 	text-align: center;
 	position: fixed;
@@ -265,7 +265,7 @@ button:hover {
 
 /* portfolio */
 .portfolio {
-	background: url(../img/works.png) no-repeat top center;
+	background: url(../img/works.jpg) no-repeat top center;
 	background-size: cover;
 
 	padding-bottom: 40px;
@@ -332,12 +332,12 @@ button:hover {
 
 /* portfolio2 */
 .portfolio2 {
-	background: url("../img/works.png") repeat-y top center;
+	background: url(../img/works.jpg) repeat-y top center;
 	/*background-size: cover;*/
 }
 
 .portfolio2 p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-size: 22px;
 }
