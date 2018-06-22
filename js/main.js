@@ -40,6 +40,7 @@ $(document).ready(function() {
 	  });
 	});
 
+	// onscroll
 	window.onscroll = function() {
 	  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 	  // console.log(scrolled);
@@ -57,4 +58,9 @@ $(document).ready(function() {
 	  	});
 	  }
 	}
+
+	// lazy load
+	var myLazyLoad = new LazyLoad();
+	
+
 });
