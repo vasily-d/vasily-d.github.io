@@ -57,7 +57,7 @@ $(document).ready(function() {
 	  		//
 	  	});
 	  }
-	}
+	};
 
 	// lazy load
 	var myLazyLoad = new LazyLoad();
