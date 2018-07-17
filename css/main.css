@@ -103,6 +103,7 @@ button:hover {
 	text-decoration: none;
 	padding: 12px 0;
 	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .main-menu a:hover {
@@ -182,6 +183,10 @@ button:hover {
 	/*text-shadow: 5px 0 5px #000;*/
 }
 
+.header-skills ul li:last-child {
+	margin-bottom: 0;
+}
+
 
 
 /* .step-work */
@@ -248,17 +253,17 @@ button:hover {
 .stack-top .stack-item, .stack-bottom .stack-item {
 	display: inline-block;
 	vertical-align: top;
-	width: 33%;
+	width: 49%;
 	margin-bottom: 10px;
 }
 
 .stack-top .stack-item p, .stack-bottom .stack-item p {
-	font-size: 22px;
+	font-size: 20px;
 	color: #000;
 }
 
 .stack-top .stack-item img, .stack-bottom .stack-item img {
-	
+	width: 180px;
 }
 
 
@@ -435,9 +440,13 @@ button:hover {
 		width: 49%;
 	}
 }
-@media all and (max-width: 860px) {
+@media all and (max-width: 974px) {
 	.main-menu {
 		background-size: cover;
+	}
+
+	.main-menu a {
+		padding: 8px 0;
 	}
 }
 @media all and (max-width: 576px) {
@@ -631,9 +640,9 @@ button:hover {
 		top: 140px;
 	}
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
 	.popup {
-		width: 330px;
-		padding: 20px 15px 15px;
+		width: 320px;
+		padding: 20px 10px 15px;
 	}
 }
