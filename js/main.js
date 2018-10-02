@@ -62,4 +62,8 @@ $(document).ready(function() {
 	// lazy load
 	var myLazyLoad = new LazyLoad();
 
+	// count
+	// console.log($('.slides-portfolio__item').length);
+	$('.work-count span').text($('.slides-portfolio__item').length);
+
 });

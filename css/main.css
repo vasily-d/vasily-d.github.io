@@ -77,13 +77,16 @@ button:hover {
 	bottom: 0;
 	right: 0;
 	z-index: 300;
+	width: 70px;
 
 	display: none;
 }
 
 /* top menu */
 .main-menu {
-	background: url(../img/bg_menu.png) repeat-x;
+	/*background: url(../img/bg_menu.png) repeat-x;*/
+	/*background: #000;*/
+	background: linear-gradient(to top, #aaa, #000);
 	/*background-size: cover;*/
 	/*min-height: 54px;*/
 	text-align: center;
@@ -98,7 +101,8 @@ button:hover {
 .main-menu a {
 	display: inline-block;
 	vertical-align: top;
-	color: #000;
+	/*color: #000;*/
+	color: #fff;
 	margin: 0 10px;
 	text-decoration: none;
 	padding: 12px 0;
@@ -107,7 +111,8 @@ button:hover {
 }
 
 .main-menu a:hover {
-	color: #8a0a48;
+	/*color: #8a0a48;*/
+	opacity: .8;
 }
 
 
@@ -254,7 +259,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	width: 49%;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .stack-top .stack-item p, .stack-bottom .stack-item p {
@@ -410,10 +415,11 @@ button:hover {
 /* footer */
 .footer {
 	text-align: center;
-	background: url(../img/bg_footer.png) repeat-x;
-	background-size: cover;
-	/*background: yellow;*/
-	color: #000;
+	/*background: url(../img/bg_footer.png) repeat-x;*/
+	/*background-size: cover;*/
+	/*background: #000;*/
+	background: linear-gradient(to top, #000, #555);
+	color: #fff;
 	padding: 10px 0;
 	min-height: 54px;
 }
@@ -430,6 +436,7 @@ button:hover {
 .footer__links a {
 	font-size: 22px;
 	margin-right: 5px;
+	color: #fff;
 }
 
 
