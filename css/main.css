@@ -32,7 +32,7 @@ h1,h2,h3,h4,p,ul,input,picture {
 
 a {
 	/*text-decoration: none;*/
-	color: #00f;
+	color: #232323;
 	transition: all .2s;
 }
 
@@ -86,7 +86,7 @@ button:hover {
 .main-menu {
 	/*background: url(../img/bg_menu.png) repeat-x;*/
 	/*background: #000;*/
-	background: linear-gradient(to top, #aaa, #000);
+	background: linear-gradient(to top, #4b4a4e, #000);
 	/*background-size: cover;*/
 	/*min-height: 54px;*/
 	text-align: center;
@@ -165,6 +165,7 @@ button:hover {
 .header-skills {
 	background: #000;
 	padding: 15px 40px 15px;
+	border-radius: 25px;
 }
 
 .header-skills h2 {
@@ -280,6 +281,10 @@ button:hover {
 
 	padding-bottom: 10px;
 	text-align: center;
+}
+
+.portfolio .work-count {
+	font-size: 18px;
 }
 
 .portfolio h2 {
