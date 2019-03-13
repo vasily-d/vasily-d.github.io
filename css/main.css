@@ -262,6 +262,12 @@ button:hover {
 	width: 49%;
 	margin-bottom: 5px;
 }
+.stack-bottom .stack-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	margin-bottom: 5px;
+}
 
 .stack-top .stack-item p, .stack-bottom .stack-item p {
 	font-size: 20px;
