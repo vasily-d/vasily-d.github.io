@@ -259,7 +259,7 @@ button:hover {
 .stack-top .stack-item, .stack-bottom .stack-item {
 	display: inline-block;
 	vertical-align: top;
-	width: 49%;
+	width: 33%;
 	margin-bottom: 5px;
 }
 .stack-bottom .stack-item {
