@@ -11,8 +11,8 @@ $(document).ready(function() {
 	});
 
 	// auto date
-	var dt = new Date();
-	$('.footer__copyright').text('Copyright '+String.fromCharCode(169)+' 2016 - '+dt.getFullYear());
+	// var dt = new Date();
+	// $('.footer__copyright').text('Copyright '+String.fromCharCode(169)+' 1970 - '+dt.getFullYear());
 
 	// popup
 	// ставим на кнопку которая вызывает данный popup
