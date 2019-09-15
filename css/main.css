@@ -74,10 +74,10 @@ button:hover {
 
 .arrow {
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
+	bottom: 20px;
+	right: 20px;
 	z-index: 300;
-	width: 70px;
+	width: 55px;
 
 	display: none;
 }
@@ -103,9 +103,9 @@ button:hover {
 	vertical-align: top;
 	/*color: #000;*/
 	color: #fff;
-	margin: 0 10px;
+	margin: 0 20px;
 	text-decoration: none;
-	padding: 12px 0;
+	padding: 15px 0;
 	font-size: 18px;
 	text-transform: uppercase;
 }
@@ -143,6 +143,7 @@ button:hover {
 
 .header h1 {
 	font-size: 44px;
+	line-height: 55px;
 	color: #f9e00b;
 	text-shadow: 5px 0 5px #000;
 
@@ -165,7 +166,7 @@ button:hover {
 .header-skills {
 	background: #000;
 	padding: 15px 40px 15px;
-	border-radius: 25px;
+	border-radius: 10px;
 }
 
 .header-skills h2 {
@@ -183,9 +184,9 @@ button:hover {
 
 .header-skills ul li {
 	color: #f9e00b;
-	font-size: 24px;
+	font-size: 20px;
 	text-align: left;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	/*text-shadow: 5px 0 5px #000;*/
 }
 
@@ -235,17 +236,17 @@ button:hover {
 	background: url(../img/advantages.jpg) no-repeat top center;
 	background-size: cover;
 
-	padding-bottom: 40px;
+	padding: 50px 0;
 	text-align: center;
 }
 
 .stack h2 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
-	text-shadow: 0px 0px 4px #fff;
+	font-size: 36px;
+	text-transform: uppercase;
+	/*text-shadow: 0px 0px 3px #fff;*/
 	
-	padding-top: 60px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .stack-top {
@@ -259,23 +260,24 @@ button:hover {
 .stack-top .stack-item, .stack-bottom .stack-item {
 	display: inline-block;
 	vertical-align: top;
-	width: 33%;
-	margin-bottom: 5px;
+	width: 32%;
+	margin-bottom: 20px;
 }
 .stack-bottom .stack-item {
 	display: inline-block;
 	vertical-align: top;
-	width: 33%;
-	margin-bottom: 5px;
+	width: 32%;
+	margin-bottom: 10px;
 }
 
 .stack-top .stack-item p, .stack-bottom .stack-item p {
-	font-size: 20px;
+	font-size: 18px;
 	color: #000;
+	margin-bottom: 3px;
 }
 
 .stack-top .stack-item img, .stack-bottom .stack-item img {
-	width: 180px;
+	width: 120px;
 }
 
 
@@ -284,22 +286,20 @@ button:hover {
 .portfolio {
 	background: url(../img/works.jpg) no-repeat top center;
 	background-size: cover;
+	padding: 50px 0 20px;
 
-	padding-bottom: 10px;
 	text-align: center;
 }
 
 .portfolio .work-count {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .portfolio h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-	text-shadow: 0px 0px 4px #fff;
-	text-transform: uppercase;
-	
-	padding-top: 50px;
+	/*text-shadow: 0px 0px 4px #fff;*/
+	text-transform: uppercase;	
 }
 
 .portfolio h2 a {
@@ -361,7 +361,7 @@ button:hover {
 .portfolio2 p {
 	padding: 10px 0;
 	text-align: center;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .portfolio2 p a {
